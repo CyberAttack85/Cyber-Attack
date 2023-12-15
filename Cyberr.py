@@ -62,8 +62,7 @@ $$ |  $$ |$$  _$$  _$$\  \____$$\ $$  __$$\
 $$ |  $$ |$$ / $$ / $$ | $$$$$$$ |$$ |  \__|
 $$ |  $$ |$$ | $$ | $$ |$$  __$$ |$$ |      
 \$$$$$$  |$$ | $$ | $$ |\$$$$$$$ |$$ |      
- \______/ \__| \__| \__| \_______|\__|      
-                                                                                       
+ \______/ \__| \__| \__| \_______|\__|                                                                                             
                                             
 $$$$$$\                                     
 \_$$  _|                                    
@@ -73,13 +72,14 @@ $$$$$$\
   $$ |  $$ |  $$ |$$ |  $$ | $$  $$<        
 $$$$$$\ $$ |  $$ |\$$$$$$  |$$  /\$$\       
 \______|\__|  \__| \______/ \__/  \__|    
-[<>] The Original Codes are Written by Dilute Codes
+
+[<>] The Original Codes are Written by Umar Nazeer 
 ---------------------------------------------------
  ╰◈▪➣ Github    : https://github.com/CyberAttack 
- ╰◈▪➣ Facebook  : 033[92;1m
- ╰◈▪➣ Author    : Umar Nazeer 
+ ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
+ ╰◈▪➣ Author    : ★彡[ᴜᴍᴀʀ ɴᴀᴢᴇᴇʀ]彡★ 
  ╰◈▪➣ Version   : DC Extreme [2.2]
- ╰◈▪➣   \033[1;96mNaam Ki Dosti Kaam ki Yaari\n\tDosron Ki Tarah ! Adat Nhi Hamari \033[1;97m
+ ╰◈▪➣   \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
 ---------------------------------------------------''')
 	p(logo)
  
@@ -124,11 +124,11 @@ class Main:
 		if m_1 == '1':
 			self.methods_menu()
 		elif m_1 == '2':
-			os.system('xdg-open https://facebook.com/groups/124939013896146/')
+			os.system('xdg-open https://www.facebook.com/groups/1020338239226719/')
 			sp(1)
 			self.menu()
 		elif m_2 =='3':
-			os.system('xdg-open https://chat.whatsapp.com/GzUiQ51HrLpDzebhrmsgYh')
+			os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 		else:
 			p(' [•] Wrong Select Hai Bhosdikay ')
 			sp(1)
