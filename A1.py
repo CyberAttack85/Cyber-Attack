@@ -229,14 +229,14 @@ def Main():
 	opt = input('Choose option >>> ')
 	if opt in ["A","1"]:
 		self.file_menu()
-	if opt in ["A","2"]:
+	if opt in ["B","2"]:
 		virusA()
-	if opt in ["B","3"]:
+	if opt in ["C","3"]:
 		admin()
-	if opt in ["C","4"]:
+	if opt in ["D","4"]:
 		os.system('xdg-open https://www.facebook.com/InnocentUmarr');time.sleep(1)
 		fb()
-	if opt in ["D","5"]:
+	if opt in ["E","5"]:
 		os.system('xdg-open https://t.me/Inoxent_boy');time.sleep(1)
 		group()
 	if opt in ["0","0"]:
@@ -266,7 +266,7 @@ def admin():
 	if bal =='0':
 		Main()
 		
-def virusA():
+def virusB():
 	user=[]
 	os.system('clear')
 	print(logo)
