@@ -247,11 +247,7 @@ def admin():
 	os.system('clear')
 	print(logo)
 	print(50*'_')
-		p(" [1] FILE CLONING ")
-		p(" [2] RANDOM CLONING ")
-		p(" [3] DUMP TOOL ")
-		p(" [4] PASS CHANGER ")
-		p(" [E] EXIT TOOL ") 
+		
 		line()
 		opt1 = input(" \033[1;92m[•] \033[1;97m Select an Option : ")
 		if opt1 == "1":self.file_menu()
