@@ -164,8 +164,6 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
 
 [<>] The Original Codes are Written by Umar Nazeer 
 ---------------------------------------------------
-
-╰◈▪➣ Github    : https://github.com/CyberAttack 
 ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
 ╰◈▪➣ Author    : ★彡[ᴜᴍᴀʀ ɴᴀᴢᴇᴇʀ]彡★ 
 ╰◈▪➣ Version   : DC Extreme [2.2]
