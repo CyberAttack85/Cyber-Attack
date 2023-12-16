@@ -219,7 +219,7 @@ def cek_apk(session,coki):
 def Main():
 	os.system('clear')
 	print(logo)
-	print("[\033[1;37m01]\33[1;92mSTART FILE CLONING")
+		p(" [1] FILE CLONING ")
 	print("[\033[1;37m02]\33[1;92mSTART RANDOM CLONING")
 	print("[\033[1;37m03]\33[1;92mCONTACT ADMIN & FB GROUP")
 	print("[\033[1;37m04]\33[1;92mFOLLOW MY FB PROFILE")
@@ -265,17 +265,6 @@ def admin():
 		admin()
 	if bal =='0':
 		Main()
-		
-		def file_menu(self):
-		logo()
-		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
-		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-		try:
-			id = open(file,"r").read().splitlines()
-			self.method_select(id)
-		except FileNotFoundError:
-			p(" [•] File Path Incorrect ")
-			sp(2);self.file_menu()
 		
 def virusA():
 	user=[]
