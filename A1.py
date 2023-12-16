@@ -250,8 +250,6 @@ def Main():
 	
 def dump_menu(self):
 		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
-		
-		print(logo)
 		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
 		id = open(file,"r").read().splitlines()
