@@ -250,8 +250,16 @@ def Main():
 		id = open(file,"r").read().splitlines()
 			self.method_select(id)
 		except FileNotFoundError:
-			p(" [•] File Path Incorrect ")
+			print(" [•] File Path Incorrect ")
 			sp(2);self.file_menu()
+			def method_select(self,id):
+		logo()
+		print(" [1] Method 1 ")
+		print(" [2] Mehtod 2 ")
+		print(" [3] Method 3 ")
+		print(" [4] Method 4 " )
+		line()
+			
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
 def admin():
