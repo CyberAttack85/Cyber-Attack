@@ -226,8 +226,9 @@ def Main():
 	print("[\033[1;37m05]\33[1;92mJOIN MESSENGER GROUP")
 	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
 	print(54*'━')
-	opt01 = input('Choose option >>> ')
-	if opt01 == "01":self.file_menu()
+	opt = input('Choose option >>> ')
+	if opt01 ["A","1"]:
+		self.file_menu()
 	if opt in ["B","2"]:
 		virusB()
 	if opt in ["C","3"]:
@@ -265,17 +266,6 @@ def admin():
 	if bal =='0':
 		Main()
 		
-		def file_menu(self):
-		logo()
-		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
-		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-		try:
-			id = open(file,"r").read().splitlines()
-			self.method_select(id)
-		except FileNotFoundError:
-			p(" [•] File Path Incorrect ")
-			sp(2);self.file_menu()
-			
 def virusA():
 	user=[]
 	os.system('clear')
