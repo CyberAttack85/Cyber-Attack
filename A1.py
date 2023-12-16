@@ -247,7 +247,11 @@ def Main():
 		logo()
 		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-	
+		id = open(file,"r").read().splitlines()
+			self.method_select(id)
+		except FileNotFoundError:
+			p(" [•] File Path Incorrect ")
+			sp(2);self.file_menu()
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
 def admin():
