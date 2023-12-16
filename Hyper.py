@@ -565,13 +565,7 @@ class crack_main():
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')
-                with tpd(max_workers=30) as saqi:							
-				if 'i' in method:
-					saqi.submit(self.method1,uid,nm,pwx)
-				elif 'ii' in method:
-					saqi.submit(self.method2,uid,nm,pwx)
-				elif 'iii' in method:
-					saqi.submit(self.method3,uid,nm,pwx)
+                with tpd(max_workers=30) as saqi:											
 		self.saved_results(ok,cp)
  
 	def method1(self,uid,nm,pwx):
