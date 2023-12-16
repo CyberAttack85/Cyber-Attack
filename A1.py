@@ -242,6 +242,9 @@ def Main():
 	if opt in ["0","0"]:
 		exit()
 		
+		def dump_menu(self):
+		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
+		
 	else:
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
