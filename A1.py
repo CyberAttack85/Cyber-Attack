@@ -247,8 +247,7 @@ def Main():
 		logo()
 		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-		try:
-	else:
+	
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
 def admin():
