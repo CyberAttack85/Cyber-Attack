@@ -89,18 +89,7 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
           $$    $$/                               
            $$$$$$/                                
 
-\033[1;97m""")     
-
-logo = (f'''      \x1b[31;1m 
-  
-\033[1;97m===============================================================
-\033[1;97m VERSION:\033[1;92m 0.1
-\033[1;97m STATUS :\033[1;92m FREE TOOL
-\033[1;97m NOTICE :\033[1;92m USE DATA ON RANDOM AND WIFI ON FILE 
-\033[1;97m============================================================
-
-''')
-def clear():
+\033[1;97m""")  
 	p(logo)
 def clear():
 	os.system("clear")
@@ -1100,6 +1089,12 @@ class automation:
 		input("[•] Press Enter to go back ")
 
 		self.iAmPasswordManager()
+
+
+
+
+
+
 
 if __name__=="__main__":
 	#update()
