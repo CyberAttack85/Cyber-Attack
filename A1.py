@@ -241,24 +241,25 @@ def Main():
 		group()
 	if opt in ["0","0"]:
 		exit()
-		def dump_menu(self):
+		
+		if opt1 == "2":self.num_menu()
+		if opt1 == "4":automation().menu()
+		if opt1 == "3":Grep().links_only()
+		if opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
+		else:print(" [•] Wrong Select ");sp(2);self.iAmMenu()
+	
+def dump_menu(self):
 		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
 		
 		logo()
 		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
 		id = open(file,"r").read().splitlines()
-			
+			self.method_select(id)
 		except FileNotFoundError:
-			print(" [•] File Path Incorrect ")
+			p(" [•] File Path Incorrect ")
 			sp(2);self.file_menu()
-			def method_select(self,id):
-		logo()
-		print(" [1] Method 1 ")
-		print(" [2] Mehtod 2 ")
-		print(" [3] Method 3 ")
-		print(" [4] Method 4 " )
-		line()
+			
 			
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
