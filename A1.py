@@ -246,7 +246,7 @@ def Main():
 		
 		def file_menu(self):
 		logo()
-		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
+		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
 		try:
 	else:
