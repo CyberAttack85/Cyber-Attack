@@ -333,15 +333,5 @@ def b(uid,pwx,tl):
             else:
                 continue
         loop+=1        
-    except:
-
-        pass
-def superuser():
-    UMO="HRIDOYE-"
-    uuid = str(os.geteuid()) + str(os.getlogin()) 
-    id = "5".join(uuid)
-    print(logo)
-    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
-    if id in DARK:
         Main()
     
