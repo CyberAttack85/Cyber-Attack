@@ -565,8 +565,7 @@ class crack_main():
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')
-                with tpd(max_workers=30) as saqi:
-			for user in id:
+                with tpd(max_workers=30) as saqi:			
 				uid,nm = user.split('|')
 				if 'i' in method:
 					saqi.submit(self.method1,uid,nm,pwx)
