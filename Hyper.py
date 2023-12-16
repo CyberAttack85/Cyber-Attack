@@ -564,8 +564,7 @@ class crack_main():
                 print(' Total Ids : '+str(len(self.id)))
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
-                print(50*'-')
-                with tpd(max_workers=30) as saqi:														
+                print(50*'-')													
 "cpl": "true",
 "family_device_id": str(uuid.uuid4()),
 "credentials_type": "device_based_login_password",
