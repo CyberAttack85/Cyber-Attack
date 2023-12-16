@@ -220,22 +220,23 @@ def Main():
 	os.system('clear')
 	print(logo)
 	print("[\033[1;37m01]\33[1;92mSTART FILE CLONING")
-	print("[\033[1;37m01]\33[1;92mSTART RANDOM CLONING")
-	print("[\033[1;37m02]\33[1;92mCONTACT ADMIN & FB GROUP")
-	print("[\033[1;37m03]\33[1;92mFOLLOW MY FB PROFILE")
-	print("[\033[1;37m04]\33[1;92mJOIN MESSENGER GROUP")
+	print("[\033[1;37m02]\33[1;92mSTART RANDOM CLONING")
+	print("[\033[1;37m03]\33[1;92mCONTACT ADMIN & FB GROUP")
+	print("[\033[1;37m04]\33[1;92mFOLLOW MY FB PROFILE")
+	print("[\033[1;37m05]\33[1;92mJOIN MESSENGER GROUP")
 	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
 	print(54*'━')
 	opt = input('Choose option >>> ')
-	elif opt1 == "2":self.num_menu()
 	if opt in ["A","1"]:
+		self.file_menu()
+	if opt in ["A","2"]:
 		virusA()
-	if opt in ["B","2"]:
+	if opt in ["B","3"]:
 		admin()
-	if opt in ["C","3"]:
+	if opt in ["C","4"]:
 		os.system('xdg-open https://www.facebook.com/InnocentUmarr');time.sleep(1)
 		fb()
-	if opt in ["D","4"]:
+	if opt in ["D","5"]:
 		os.system('xdg-open https://t.me/Inoxent_boy');time.sleep(1)
 		group()
 	if opt in ["0","0"]:
