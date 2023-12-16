@@ -227,7 +227,7 @@ def Main():
 	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
 	print(54*'━')
 	opt = input('Choose option >>> ')
-	if opt in ["A","1"]:
+	opt1 = input(" Select an Option : ")
 		self.file_menu()
 	if opt in ["B","2"]:
 		virusB()
