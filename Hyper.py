@@ -1,3 +1,54 @@
+import os
+import sys
+import re
+import random,zlib
+import time
+from time import sleep as sp
+import string,json
+import subprocess
+import base64,uuid
+from requests.exceptions import ConnectionError as CError
+from concurrent.futures import ThreadPoolExecutor as tpd
+ 
+ 
+try:
+	import requests
+except ImportError:
+	os.system('pip install requests')
+ 
+ 
+ses = requests.Session()
+ 
+id = []
+ok = []
+cp =[]
+loop = 0
+pwx = []
+method = []
+ 
+ 
+##______COLORS____ARE________######
+pwx=[]
+W = '\033[97;1m'
+R = '\033[91;1m'
+G = '\033[92;1m'
+Y = '\033[93;1m'
+B = '\033[94;1m'
+P = '\033[95;1m'
+S = '\033[96;1m'
+N = '\x1b[0m'
+
+print("EssA")
+
+#________________________________________#
+def clear():
+	os.system("clear")
+ 
+def line():
+	print(52*'-')
+def p(x):
+	print(x)
+ 
 #SOURCE BY : UMAR-NAZEER
 #GITHUB : CYBER-ATTACK 
 #★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★
