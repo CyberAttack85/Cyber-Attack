@@ -162,10 +162,6 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
 
 \033[1;97m""")     
 
-    Tool Version :     10.1.15
-    Thanks Alot  :     Soul Hacker
-
-
 #--(Dark@Colours)---#
 r="\033[1;91m"
 g="\033[1;92m"
