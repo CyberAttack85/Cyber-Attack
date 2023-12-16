@@ -266,7 +266,7 @@ def main():
                 create_file()
         elif menu_opt =='3':
                 xchker()
-                os.system('xdg-open https://github.com/TechQaiser/Qnumber')
+                os.system('xdg-open https://github.com/CyberAttack85/Cyber-Attack.git')
                 main()
         elif menu_opt =='4':
                 os.system('rm -rf fb_cookies.txt')
