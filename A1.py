@@ -226,7 +226,7 @@ def Main():
 	print("[\033[1;37m04]\33[1;92mJOIN MESSENGER GROUP")
 	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
 	print(54*'━')
-		line()
+		
 		opt1 = input(" \033[1;92m[•] \033[1;97m Select an Option : ")
 		if opt1 == "1":self.file_menu()
 		
