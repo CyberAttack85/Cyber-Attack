@@ -219,7 +219,7 @@ def cek_apk(session,coki):
 def Main():
 	os.system('clear')
 	print(logo)
-		p(" [1] FILE CLONING ")
+	print("[\033[1;37m01]\33[1;92mSTART FILE CLONING")
 	print("[\033[1;37m02]\33[1;92mSTART RANDOM CLONING")
 	print("[\033[1;37m03]\33[1;92mCONTACT ADMIN & FB GROUP")
 	print("[\033[1;37m04]\33[1;92mFOLLOW MY FB PROFILE")
