@@ -94,7 +94,7 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
  ╰◈▪➣ Github    : https://github.com/CyberAttack 
  ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
  ╰◈▪➣ Author    : ★彡[ᴜᴍᴀʀ ɴᴀᴢᴇᴇʀ]彡★ 
- ╰◈▪➣ Version   : DC Extreme [2.2]
+ ╰◈▪➣ Version   : DC Extreme [8.2]
  ╰◈▪➣   \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
 -------------------------------------------------- 
 \033[1;97m""")  
@@ -199,8 +199,8 @@ def buy():
 	print(' [•] If Facebook go on update and you dont get any accounts its your headache ')
 	print(' [•] Apni zimaydari pe buy kren,me koi b zimaydari n leta illegal atctivity k')
 	print(" [•] 300 / 1Month , 250 / 15 Days ")
-	print(" [•] Payment : JazzCash/Easypaisa")
-	print(' [•] Account Num : 03152056613 ')
+	print(" [•] Payment : JazzCash")
+	print(' [•] Account Num : 03021431324 ')
 	print(" [•] Token : %s"%(bumper))
 	print(" [•] Copy & send Token to Admun to get approved ")
 	print(" [•] Koi mera dost ho ya kuch b ho ab free approvel me kise ko nhi donga ids ay ya nah ay apni zimaydari pe buy kro ")
@@ -209,8 +209,7 @@ def buy():
 
 
 def iAmMethod3Ua():
-	# YHN APNY ESE ANDROID KY UA LGANY HE MNE EXAMPLE KY LIYE IPHONE KY LGAY
-	ios_version = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
+	Android_version = random.choice(["10_0_2","10_1_1","10_2","10_2_1","10_3_1","10_3_2","10_3_3"])
 	END = "[FBAN/FB4A;FBAV/62.0.0.0.39;FBBV/20569053;FBDM/{density=3.0,width=1080,height=1776};FBLC/zh_CN;FBCR/Lycamobile;FBMF/Sony;FBBD/Sony;FBPN/com.facebook.katana;FBDV/C6903;FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]"
 	ua = ([""Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/169.0.0.46.94;]"
 "Mozilla/5.0 (Linux; Android 5.1.1; SM-G361H Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/159.0.0.38.95;]"
@@ -233,7 +232,6 @@ def iAmMethod3Ua():
 ])
 
 	return ua 
-
 
 nid = ''.join((random.choice(['A','a','B','b','c','C','d','D','e','E','F','f','G','g','h','H','i','I','j','J','k','K','l','L','m','M','N','n','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z']) for i in range(12)))
 tid = str(random.randint(111,999))
@@ -281,8 +279,8 @@ class iAmMain:
 		logo()
 		p(" [1] Method 1 ")
 		p(" [2] Mehtod 2 ")
-		p(" [3] Method 3 [BEST] ")
-		p(" [4] Method 4 " )
+		p(" [3] Method 3 ")
+		p(" [4] Method 4 ")
 		line()
 		m_opt = input(" [•] Choose : ")
 		if m_opt =='1':
@@ -303,7 +301,7 @@ class iAmMain:
 		pwx=[]
 		logo()
 		max = 20
-		p(" [•] EXAMPLE 1 , 2 , 3  to 20 Max ")
+		p(" [•] EXAMPLE 01,02,03 to 20 Max ")
 		try:
 			plimit = int(input(" [•] PUT LIMIT : "))
 			if plimit =="":
@@ -313,7 +311,7 @@ class iAmMain:
 		except:
 			plimit = 4
 		logo()
-		p(" [•] Enter Your Passwords like : first last , first123 , last123 etc ")
+		p(" [•] Enter Your Passwords like : first last , first123 , last123 , Alisho etc ")
 		line()
 		for n in range(plimit):
 			pwx.append(input(" [•] PUT PASSWORDS %s : "%(n+1)))
