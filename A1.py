@@ -265,6 +265,17 @@ def admin():
 	if bal =='0':
 		Main()
 		
+		def file_menu(self):
+		logo()
+		p(" \033[1;92m [•] EXAMPLE /sdcard/filename.txt")
+		file = input("\033[1;97m  [•] PUT FILE PATH : ")
+		try:
+			id = open(file,"r").read().splitlines()
+			self.method_select(id)
+		except FileNotFoundError:
+			p(" [•] File Path Incorrect ")
+			sp(2);self.file_menu()
+			
 def virusA():
 	user=[]
 	os.system('clear')
