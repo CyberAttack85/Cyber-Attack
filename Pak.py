@@ -88,9 +88,8 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
           /  \__$$ |                              
           $$    $$/                               
            $$$$$$/                                
-
+[<>] The Original Codes are Written by Umar Nazeer 
 \033[1;97m""")  
-	[<>] The Original Codes are Written by Umar Nazeer 
 	p(logo)
 def clear():
 	os.system("clear")
