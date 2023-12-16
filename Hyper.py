@@ -248,7 +248,7 @@ def main():
         os.system('rm -rf ...txt')
         os.system('clear')
         print(logo);xchker()
-        print('Code Like Humor When You Have To Explain It Its Bad')
+        print('The Original Codes are Written by Umar Nazeer')
         print(50*'-')
         print('[1] Fb Cloning Menu')
         print('[2] File Create Menu')
@@ -832,7 +832,7 @@ try:
         if f'com.h{t}pc{a}y.pro' in fileee:
                 print('error occur 0')
                 #exit()
-                #exit(f'\nsomethiiing went wrong\n\nContact Admin : +923197951815')
+                #exit(f'\nsomethiiing went wrong\n\nContact Admin : +923021431324')
 except Exception as e:
         print(e)
         pass
