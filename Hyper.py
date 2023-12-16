@@ -162,6 +162,14 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
 
 \033[1;97m""")     
 
+[<>] The Original Codes are Written by Umar Nazeer 
+---------------------------------------------------
+ ╰◈▪➣ Github    : https://github.com/CyberAttack 
+ ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
+ ╰◈▪➣ Author    : ★彡[ᴜᴍᴀʀ ɴᴀᴢᴇᴇʀ]彡★ 
+ ╰◈▪➣ Version   : DC Extreme [2.2]
+ ╰◈▪➣   \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
+---------------------------------------------------''')
 #--(Dark@Colours)---#
 r="\033[1;91m"
 g="\033[1;92m"
