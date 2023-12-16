@@ -665,8 +665,6 @@ def create_file_login():
                 time.sleep(1)
                 os.system('rm -rf .fb_cookies.txt .access_token.txt')
                 login()
-        except requests.exceptions.ConnectionError:
-                print(' No internet connection ...')
         os.system('clear')
         print(logo);xchker()
         print("[1] Create File Mix Ids")
