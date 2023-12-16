@@ -73,7 +73,7 @@ SEX= f"{random.choice(['Liger','METERED','MOBILE.EDGE' ,'MOBILE.HSPA','MOBILE.LT
 ses = requests.Session()
 def logo():
 	os.system('clear')
-logo = ("""\33[;33m   
+	logo = ("""\33[;33m   
          
 \033[92m
   ______             __                           
@@ -88,8 +88,19 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
           /  \__$$ |                              
           $$    $$/                               
            $$$$$$/                                
-\033[1;97m""")  
+
+\033[1;97m""")     
+
+logo = (f'''      \x1b[31;1m 
   
+\033[1;97m===============================================================
+\033[1;97m VERSION:\033[1;92m 0.1
+\033[1;97m STATUS :\033[1;92m FREE TOOL
+\033[1;97m NOTICE :\033[1;92m USE DATA ON RANDOM AND WIFI ON FILE 
+\033[1;97m============================================================
+
+''')
+	p(logo)
 def clear():
 	os.system("clear")
 
