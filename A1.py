@@ -230,7 +230,7 @@ def Main():
 	if opt in ["A","1"]:
 		self.file_menu()
 	if opt in ["B","2"]:
-		virusA()
+		virusB()
 	if opt in ["C","3"]:
 		admin()
 	if opt in ["D","4"]:
@@ -266,7 +266,7 @@ def admin():
 	if bal =='0':
 		Main()
 		
-def virusB():
+def virusA():
 	user=[]
 	os.system('clear')
 	print(logo)
