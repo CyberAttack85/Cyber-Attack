@@ -226,7 +226,7 @@ def Main():
 	print("[\033[1;37m05]\33[1;92mJOIN MESSENGER GROUP")
 	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
 	print(54*'━')
-	opt = input('Choose option >>> ')
+	opt01 = input('Choose option >>> ')
 	if opt01 == "01":self.file_menu()
 	if opt in ["B","2"]:
 		virusB()
