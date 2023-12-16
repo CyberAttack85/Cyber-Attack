@@ -100,6 +100,7 @@ logo = (f'''      \x1b[31;1m
 \033[1;97m============================================================
 
 ''')
+def clear():
 	p(logo)
 def clear():
 	os.system("clear")
@@ -1099,12 +1100,6 @@ class automation:
 		input("[•] Press Enter to go back ")
 
 		self.iAmPasswordManager()
-
-
-
-
-
-
 
 if __name__=="__main__":
 	#update()
