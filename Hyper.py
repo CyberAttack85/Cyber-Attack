@@ -566,10 +566,6 @@ class crack_main():
                 print(' After Every 5 Min Turn Airplane On/Off')
                 print(50*'-')
                 with tpd(max_workers=30) as saqi:											
-		self.saved_results(ok,cp)
- 
-	def method1(self,uid,nm,pwx):
-		try:
 			global ok , cp , loop
 			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
