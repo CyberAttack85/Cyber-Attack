@@ -4,7 +4,7 @@ from os import path
 from urllib.request import urlopen
 import os,base64,zlib,pip,urllib,platform,math,shutil,random,uuid,string,hashlib,json,sys
 import os,base64,zlib,pip,urllib
-os.system('xdg-open https://chat.whatsapp.com/G2UfzG9uqDgFVVVHXUYUln')
+os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 print('\n\033[1;37m[-] CHECKING UPDATE')
 def getKey():
     uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
