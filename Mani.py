@@ -237,9 +237,9 @@ def admin():
     print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
     mani=input(' [•] \033[1;32mChoose : ')
     if mani == '1':
-        os.system('xdg-open https://wa.me/+923187061605');menu()
+        os.system('xdg-open https://wa.me/+923021431324');menu()
     if mani == '2':
-        os.system('xdg-open https://www.facebook.com/profile.php?id=100000569141187&mibextid=ZbWKwL');menu()
+        os.system('xdg-open https://www.facebook.com/InnocentUmarr?mibextid=ZbWKwL');menu()
     if mani == '0':
         menu()
     else:
