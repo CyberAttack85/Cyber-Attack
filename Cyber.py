@@ -487,17 +487,17 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
-def shoha_menu():
-    UMO="CYBER-"
+def superuser():
+    UMO="UMAR-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-CYBER()
+        UMAR()
     else:
         os.system("clear")
-        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
+        os.system("xdg-open https://t.me/bdislamicyber")
         time.sleep(3.0)
         
         os.system("clear")
@@ -511,9 +511,17 @@ CYBER()
         print ("")
         print (" Your Key : "+UMO+id)
         print ("\n")
+        os.system("assalamualaikum ,I am UMAR VAI er  ROBOT and my boss is UMAR.Sir this tool is paid because 100% ok id just now login"")
         name = input(" Your Name : ")
+        os.system(f" \"{name} ,prass Enter to send your key\"")
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://wa.me/+923021431324")
-        shoha_menu()
-shoha_menu()
+        superuser()
+superuser()
+
+try:main()
+except requests.exceptions.ConnectionError:
+	print('\n No internet connection ...')
+except Exception as e:pass
+#rnd()
