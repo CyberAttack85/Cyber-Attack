@@ -318,7 +318,7 @@ def menu():
         try:
                 x = ("sex")
                 if x == ("sex"):
-                        print('\t\x1b[1;92m        UMAR TOOL MAIN MENU\n\033[1;97m====================================================\n\033[0;97m[1] \033[0;92mFILE CLONING\n\033[0;97m[2] \033[0;92mRANDOM PAK CLONING\n\033[0;97m[3] \033[0;92mCONTACT WITH OWNER\n\033[0;97m[0] \033[0;91mEXIT')
+                        print('\t\x1b[1;92m        UMAR TOOL MAIN MENU\n\033[0;97m[1] \033[0;92mFILE CLONING\n\033[0;97m[2] \033[0;92mRANDOM PAK CLONING\n\033[0;97m[3] \033[0;92mCONTACT WITH OWNER\n\033[0;97m[0] \033[0;91mEXIT')
                         linex()
                         xd=input('\033[0;97m[•] \033[0;92mCHOOSE \x1b[1;91m: \x1b[1;96m')
                         if xd in ['1','01']:
