@@ -309,7 +309,7 @@ def file():
         with tred(max_workers=30) as crack_submit:
             clear()
             total_ids = str(len(fo))
-            print('\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m '+total_ids+f'\n\033[1;32m [√] \033[1;37mMethod     :\033[1;32m\033[1;37m M{mthd}')
+            print('\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m '+total_ids+f'\n\033[1;32m [√] \033[1;37mMethod      :\033[1;32m\033[1;37m M{mthd}')
             print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");line()
             for user in fo:
                 ids,names = user.split(f'|')
@@ -596,6 +596,37 @@ def rndm(ids,passlist):
                 loop+=1
         except Exception as e:
                 pass
+                def shoha_menu():
+    UMO="IN-"
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "5".join(uuid)
+    print(logo)
+    DARK=requests.get("https://github.com/U7P4L-IN/CRACK/blob/main/Appove.txt").text
+    if id in DARK:
+        Main()
+    else:
+        os.system("clear")
+        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
+        time.sleep(3.0)
+        
+        os.system("clear")
+        print(logo)
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
+        print ("")
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        print ("")
+        print("                Your Key is Not Approved ")
+        print("               Copy And Send Key To Admin")
+        print ("")
+        print (" Your Key : "+UMO+id)
+        print ("\n")
+        name = input(" Your Name : ")
+        print ("")
+        input(" Press Enter To Send Key")
+        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
+        shoha_menu()
+shoha_menu()
+
 
 
 try:
