@@ -1,7 +1,7 @@
 from os import path
 import os,base64,zlib,pip,urllib, random ,time,json,re,string,subprocess,sys
 
-#os.system('xdg-open https://www.facebook.com/groups/1020338239226719/')
+#os.system('xdg-open https://www.facebook.com/InnocentUmarr?mibextid=ZbWKwL')
 os.system('clear')
 print('\n [√] Wait Installing Modules...!')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
