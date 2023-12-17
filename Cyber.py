@@ -489,7 +489,6 @@ def rd(ids,passlist,fbcr):
 		pass
 
 try:main()
-	pass
 def superuser():
     UMO="HRIDOYE-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
