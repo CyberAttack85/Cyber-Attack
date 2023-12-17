@@ -489,11 +489,7 @@ def rd(ids,passlist,fbcr):
 		pass
 
 try:main()
-except requests.exceptions.ConnectionError:
-	print('\n No internet connection ...')
-except Exception as e:pass
-#rnd()
-pass
+	pass
 def superuser():
     UMO="HRIDOYE-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
@@ -526,3 +522,8 @@ def superuser():
         os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
         superuser()        
 superuser()
+
+except requests.exceptions.ConnectionError:
+	print('\n No internet connection ...')
+except Exception as e:pass
+#rnd()
