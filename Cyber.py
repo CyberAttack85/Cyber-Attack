@@ -494,7 +494,7 @@ def superuser():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-        Main()
+    superuser()
     else:
         os.system("clear")
         os.system("xdg-open https://wa.me/+923021431324")
