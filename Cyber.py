@@ -487,7 +487,7 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
-      def shoha_menu():
+      def cyber_menu():
     UMO="IN-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
@@ -515,8 +515,8 @@ def rd(ids,passlist,fbcr):
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://t.me/ANONYMOUS_07XD")
-        shoha_menu()   
-shoha_menu()
+        cyber_menu()   
+cyber_menu()
 
 
 
