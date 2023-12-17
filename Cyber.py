@@ -488,17 +488,17 @@ def rd(ids,passlist,fbcr):
 	except Exception as e:
 		pass
 		
-def superuser():
-    UMO="UMAR-"
+	def shoha_menu():
+    UMO="IN-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-main()
+        IN()
     else:
         os.system("clear")
-        os.system("xdg-open https://t.me/bdislamicyber")
+        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
         time.sleep(3.0)
         
         os.system("clear")
@@ -513,12 +513,12 @@ main()
         print (" Your Key : "+UMO+id)
         print ("\n")
         name = input(" Your Name : ")
-        os.system(f" \"{name} ,prass Enter to send your key\"")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://wa.me/+923021431324")
-        superuser()
-superuser()
+        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
+        shoha_menu()
+shoha_menu()
+
 
 try:main()
 except requests.exceptions.ConnectionError:
