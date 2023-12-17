@@ -487,10 +487,8 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
-
-try:main()
 def superuser():
-    UMO="HRIDOYE-"
+    UMO="Cyber-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
@@ -499,7 +497,6 @@ def superuser():
         Main()
     else:
         os.system("clear")
-        os.system("xdg-open https://t.me/bdislamicyber")
         time.sleep(3.0)
         
         os.system("clear")
@@ -513,15 +510,15 @@ def superuser():
         print ("")
         print (" Your Key : "+UMO+id)
         print ("\n")
-        os.system("espeak \"assalamualaikum ,I am HRIDOYE VAI er  ROBOT and my boss is hridoye.Sir this tool is paid because 100% ok id just now login\"")
         name = input(" Your Name : ")
-        os.system(f"espeak \"{name} ,prass Enter to send your key\"")
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
         superuser()        
 superuser()
 
+
+try:main()
 except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 except Exception as e:pass
