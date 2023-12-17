@@ -309,13 +309,7 @@ key = 'true'
 while key == 'true':
     username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
     if username == CorrectUsername:
-            print('\033[1;97m====================================================\n\033[0;97m[•]\033[1;32m LOGGED IN UMAR TOOL SUCCESSFULLY') 
-            time.sleep(1)
-            clear()
-            key = 'false'
-#_________[ MAIN MENU ]______>>
-print("\t \033[0;97m[•] \x1b[1;92mUSER IP ADDRESS \x1b[1;91m:\033[1;36m "+ip)
-linex()
+            linex()
 def menu():
         try:
                 x = ("sex")
