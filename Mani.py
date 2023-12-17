@@ -309,7 +309,7 @@ def file():
         with tred(max_workers=30) as crack_submit:
             clear()
             total_ids = str(len(fo))
-            print('\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m '+total_ids+f'\n\033[1;32m [√] \033[1;37mMethod      :\033[1;32m\033[1;37m M{mthd}')
+            print('\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m '+total_ids+f'\n\033[1;32m [√] \033[1;37mMethod     :\033[1;32m\033[1;37m M{mthd}')
             print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");line()
             for user in fo:
                 ids,names = user.split(f'|')
