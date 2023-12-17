@@ -494,7 +494,7 @@ def shoha_menu():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-        CYBER()
+CYBER()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
@@ -514,7 +514,6 @@ def shoha_menu():
         name = input(" Your Name : ")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://wa.me/+8801790210942")
+        os.system("xdg-open https://wa.me/+923021431324")
         shoha_menu()
-        
 shoha_menu()
