@@ -502,7 +502,7 @@ def superuser():
         
         os.system("clear")
         print(logo)
-        print("   [First Get Approvel]   ")
+        print("                [First Get Approvel]   ")
         print ("")
         print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
         print ("")
