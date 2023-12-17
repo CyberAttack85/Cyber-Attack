@@ -492,7 +492,7 @@ def shoha_menu():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/U7P4L-IN/CRACK/blob/main/Appove.txt").text
+    DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
         CYBER()
     else:
@@ -514,7 +514,7 @@ def shoha_menu():
         name = input(" Your Name : ")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
+        os.system("xdg-open https://wa.me/+8801790210942")
         shoha_menu()
         
 shoha_menu()
