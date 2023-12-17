@@ -493,7 +493,7 @@ def superuser():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-        Main()
+
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/bdislamicyber")
@@ -515,8 +515,8 @@ def superuser():
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://wa.me/+923021431324")
-        superuser()        
-superuser()
+        superuser()       
+	    
 
 try:main()
 except requests.exceptions.ConnectionError:
