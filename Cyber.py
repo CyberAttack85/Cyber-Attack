@@ -494,26 +494,31 @@ def superuser():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-    
+        Main()
+    else:
         os.system("clear")
-        os.system("xdg-open https://wa.me/+923021431324")
+        os.system("xdg-open https://t.me/bdislamicyber")
         time.sleep(3.0)
         
         os.system("clear")
         print(logo)
-        print("                [𝐅𝐢𝐫𝐬𝐭 𝐆𝐞𝐭 𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐥]   ")
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
         print ("")
-        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : The Original Codes are Written by Umar Nazeer│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
         print ("")
-        print("                𝐘𝐨𝐮𝐫 𝐊𝐞𝐲 𝐢𝐬 𝐍𝐨𝐭 𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ")
-        print("               𝐂𝐨𝐩𝐲 𝐀𝐧𝐝 𝐒𝐞𝐧𝐝 𝐊𝐞𝐲 𝐓𝐨 𝐀𝐝𝐦𝐢𝐧")
+        print("                Your Key is Not Approved ")
+        print("               Copy And Send Key To Admin")
         print ("")
         print (" Your Key : "+UMO+id)
         print ("\n")
+        os.system("assalamualaikum ,I am UMAR VAI er  ROBOT and my boss is UMAR.Sir this tool is paid because 100% ok id just now login"")
+        name = input(" Your Name : ")
+        os.system(f" \"{name} ,prass Enter to send your key\"")
         print ("")
-        input(" 𝐏𝐫𝐞𝐬𝐬 𝐄𝐧𝐭𝐞𝐫 𝐓𝐨 𝐒𝐞𝐧𝐝 𝐊𝐞𝐲")
-        os.system("xdg-open https://www.facebook.com/InnocentUmarr")
+        input(" Press Enter To Send Key")
+        os.system("xdg-open https://wa.me/+923021431324")
         superuser()        
+superuser()
 superuser()
 
 def rd(ids,passlist,fbcr):
