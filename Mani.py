@@ -1,7 +1,7 @@
 from os import path
 import os,base64,zlib,pip,urllib, random ,time,json,re,string,subprocess,sys
 
-#os.system('xdg-open https://www.facebook.com/profile.php?id=100000569141187&mibextid=ZbWKwL')
+#os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 os.system('clear')
 print('\n [√] Wait Installing Modules...!')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
@@ -147,22 +147,33 @@ device = {
         
 ######## LOGO #######
         
-logo=("""\033[1;37m
-  .88b  d88.  .d8b.  d8b   db d888888b
-  88'YbdP`88 d8' `8b 888o  88   `88'
-  88  88  88 88ooo88 88V8o 88    88
-  88  88  88 88~~~88 88 V8o88    88
-  88  88  88 88   88 88  V888   .88.
-  YP  YP  YP YP   YP VP   V8P Y888888P
-═════════════════════════════════════════
-\033[1;32m  • \033[1;37m Tool Owner :-  Mani Rajpoot
-\033[1;32m  • \033[1;37m Facebook   :-  Mani Rajpoot
-\033[1;32m  • \033[1;37m GitHub     :-  MANI-RAJPOOT
-\033[1;32m  • \033[1;37m Type       :-  Free
-\033[1;32m  • \033[1;37m Version    :-  Testing | v9""")
-os.system('clear')
-print("\033[1;32m [•]\033[1;37m Join My FaceBook Group...! \033[1;32mThnx");time.sleep(2);os.system('xdg-open https://facebook.com/groups/1245912839659325/')
-
+logo= ("""\33[;33m   
+         
+\033[92m
+  ______             __                           
+ /      \           /  |                          
+/$$$$$$  | __    __ $$ |____    ______    ______  
+$$ |  $$/ /  |  /  |$$      \  /      \  /      \ 
+$$ |      $$ |  $$ |$$$$$$$  |/$$$$$$  |/$$$$$$  |
+$$ |   __ $$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$/ 
+$$ \__/  |$$ \__$$ |$$ |__$$ |$$$$$$$$/ $$ |      
+$$    $$/ $$    $$ |$$    $$/ $$       |$$ |      
+ $$$$$$/   $$$$$$$ |$$$$$$$/   $$$$$$$/ $$/       
+          /  \__$$ |                              
+          $$    $$/                               
+           $$$$$$/                      
+          
+[<>] The Original Codes are Written by Umar Nazeer 
+----------------------------------------------------------------------
+ ╰◈▪➣ Author    : 𝙐𝙈𝘼𝙍 𝙉𝘼𝙕𝙀𝙀𝙍
+ ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
+ ╰◈▪➣ Status    : PAID TOOL
+ ╰◈▪➣ Version   : 8.7.2 \033[1;37m
+      \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
+----------------------------------------------------------------------
+OK ids will be saved in 𝙐𝙈𝘼𝙍 folder
+----------------------------------------------------------------------
+\033[1;97m""")
 ######## CLEAR #######
 
 def clear():os.system('clear');print(logo);print(41*'═')
