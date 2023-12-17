@@ -489,13 +489,13 @@ def rd(ids,passlist,fbcr):
 		pass
 		
 	def shoha_menu():
-    UMO="U7P4L-"
+    UMO="Cyber-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/U7P4L-IN/CRACK/blob/main/Appove.txt").text
+    DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-    U7P4L()
+    Cyber()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
