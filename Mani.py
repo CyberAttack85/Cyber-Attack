@@ -309,8 +309,10 @@ def file():
         with tred(max_workers=30) as crack_submit:
             clear()
             total_ids = str(len(fo))
-            print('\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m '+total_ids+f'\n\033[1;32m [√] \033[1;37mMethod \033[1;32m>\033[1;37m M{mthd}')
-            print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");line()
+            print('\033[1;37m[+] Total account : \033[1;33m'+tl)
+            print("\033[1;37m[+] Process has been started \033[1;37m")
+            linex()
+            print(' \033[1;97m\033[1;41m [ Use flight Airplane mode for speedup ] \033[0m\033[1;93m')         
             for user in fo:
                 ids,names = user.split(f'|')
                 passlist = plist
