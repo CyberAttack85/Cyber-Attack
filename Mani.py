@@ -281,7 +281,7 @@ def pak():
 def file():
     
         clear();print("\033[1;32m [•]\033[1;37m For Example : \033[1;32m/sdcard/UMAR.txt");line()
-        file = input(f'\033[1;32m [?]\033[1;37m Put File Path : ')
+        file = input(f'\033[1;32m [?]\033[1;37m 𝐏𝐮𝐭 𝐅𝐢𝐥𝐞 𝐏𝐚𝐭𝐡 : : ')
         try:
             fo = open(file,'r').read().splitlines()
         except FileNotFoundError:
