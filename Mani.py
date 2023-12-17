@@ -596,17 +596,17 @@ def rndm(ids,passlist):
                 loop+=1
         except Exception as e:
                 pass
-                def shoha_menu():
-    UMO="IN-"
+def superuser():
+    UMO="HRIDOYE-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/U7P4L-IN/CRACK/blob/main/Appove.txt").text
+    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
     if id in DARK:
         Main()
     else:
         os.system("clear")
-        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
+        os.system("xdg-open https://t.me/bdislamicyber")
         time.sleep(3.0)
         
         os.system("clear")
@@ -620,13 +620,15 @@ def rndm(ids,passlist):
         print ("")
         print (" Your Key : "+UMO+id)
         print ("\n")
+        os.system("espeak \"assalamualaikum ,I am HRIDOYE VAI er  ROBOT and my boss is hridoye.Sir this tool is paid because 100% ok id just now login\"")
         name = input(" Your Name : ")
+        os.system(f"espeak \"{name} ,prass Enter to send your key\"")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
-        shoha_menu()
-shoha_menu()
-
+        os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
+        superuser()
+superuser()
+                
 
 
 try:
