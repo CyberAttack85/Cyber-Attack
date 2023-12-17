@@ -489,7 +489,6 @@ def rd(ids,passlist,fbcr):
 		pass
 		
 	def shoha_menu():
-    UMO="CYBER-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
