@@ -487,6 +487,7 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
+		
 def superuser():
     UMO="UMAR-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
@@ -494,7 +495,7 @@ def superuser():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
     if id in DARK:
-        UMAR()
+main()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/bdislamicyber")
