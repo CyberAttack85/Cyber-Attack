@@ -603,7 +603,7 @@ def superuser():
     print(logo)
     DARK=requests.get("https://github.com/CyberAttack85/Aproval/blob/main/Aproval.tex").text
     if id in DARK:
-        Main()
+        HRIDOYE()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/bdislamicyber")
@@ -626,9 +626,6 @@ def superuser():
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
-        superuser()
-superuser()
-                
 
 
 try:
