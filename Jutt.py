@@ -408,13 +408,13 @@ def menu():
                                 else:
                                         print('\033[0;97m[•] \033[0;91mCHOOSE CORRECT OPTION');menu()
                         elif xd in ['3','03']:
-                                os.system('xdg-open https://www.facebook.com/mradi5000');menu() 
+                                os.system('xdg-open https://wa.me/+923021431324');menu() 
                         elif xd in ['0','00']:
                                 clear()
                                 print('\t\x1b[1;92m   EXIT FROM UMAR TOOL')
                                 linex()
                                 input('\033[0;97m[•]\x1b[1;92m PRESS ENTER TO CONTACT OWNER ');clear() 
-                                os.system('xdg-open https://www.facebook.com/mradi5000');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE UMAR TOOL');time.sleep(2);linex();exit() 
+                                os.system('xdg-open https://wa.me/+923021431324');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE UMAR TOOL');time.sleep(2);linex();exit() 
                         else:
                                 print('\033[0;97m[•] \033[0;91mCHOOSE CORRECT OPTION');menu()
         except ValueError:
