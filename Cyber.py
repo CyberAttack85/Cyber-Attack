@@ -512,7 +512,6 @@ def superuser():
         print (" Your Key : "+UMO+id)
         print ("\n")
         os.system("Assalamualaikum ,I am Jarvis VAI er  ROBOT and my boss is Umar.Sir this tool is paid because 100% ok id just now login\"")
-        name = input(" Your Name : ")
         print ("")
         input(" Press Enter To Send Key")
         os.system("xdg-open https://www.facebook.com/InnocentUmarr")
