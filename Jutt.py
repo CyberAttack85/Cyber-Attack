@@ -6,6 +6,14 @@ import os,base64,zlib,pip,urllib,platform,math,shutil,random,uuid,string,hashlib
 import os,base64,zlib,pip,urllib
 os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 print('\n\033[1;37m[-] CHECKING UPDATE')
+def getKey():
+    uuidd = str(os.geteuid()) + str(os.getlogin()) + str(os.getuid())
+    id = "".join(uuidd).replace("_","").replace("360","JXB").replace("u","9").replace("a","A")
+    plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
+    xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
+    bxd = "JXB-"
+    bumper = bxd+id+xp
+    return bumper
 try:
         import os,requests,json,time,re,random,sys,uuid,string,subprocess
         from string import *
