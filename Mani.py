@@ -197,11 +197,11 @@ tokenku=[]
 
 def menu():
     clear();http()
-    print(' [1;32m1\033[97;1m] FILE CLONING')
-    print(' [1;32m2\033[97;1m] RANDOM CLONING ')
-    print(' [1;32m3\033[97;1m] JOIN GROUP ')
-    print(' [1;32m4\033[97;1m] CONTACT ADMIN')
-    print(' [1;32m0\033[97;1m] \033[1;31mEXIT FROM MANI TOOL ');line()
+    print(' [1\033[97;1m] FILE CLONING')
+    print(' [2\033[97;1m] RANDOM CLONING ')
+    print(' [\033[97;1m] JOIN GROUP ')
+    print(' [4\033[97;1m] CONTACT ADMIN')
+    print(' [0\033[97;1m] \033[EXIT FROM MANI TOOL ');line()
     mani=input(' [•] Choose : ')
     if mani in ['1','01']:file()
     elif mani in ['2','02']:pak()
