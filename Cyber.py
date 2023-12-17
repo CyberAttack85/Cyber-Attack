@@ -487,8 +487,8 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
-def superuser():
-    UMO="Cyber-"
+      def shoha_menu():
+    UMO="IN-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
@@ -497,6 +497,7 @@ def superuser():
         Main()
     else:
         os.system("clear")
+        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
         time.sleep(3.0)
         
         os.system("clear")
@@ -513,8 +514,10 @@ def superuser():
         name = input(" Your Name : ")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
-        superuser()        
+        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
+        shoha_menu()   
+shoha_menu()
+
 
 
 try:main()
