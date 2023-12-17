@@ -451,37 +451,6 @@ def m3(ids,names,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
-def superuser():
-    UMO="UMAR-"
-    uuid = str(os.geteuid()) + str(os.getlogin()) 
-    id = "5".join(uuid)
-    print(logo)
-    DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
-    if id in DARK:
-    
-    else:
-        os.system("clear")
-        os.system("xdg-open https://t.me/bdislamicyber")
-        time.sleep(3.0)
-        
-        os.system("clear")
-        print(logo)
-        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
-        print ("")
-        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
-        print ("")
-        print("                Your Key is Not Approved ")
-        print("               Copy And Send Key To Admin")
-        print ("")
-        print (" Your Key : "+UMO+id)
-        print ("\n")
-        name = input(" Your Name : ")
-        os.system(f" \"{name} ,prass Enter to send your key\"")
-        print ("")
-        input(" Press Enter To Send Key")
-        os.system("xdg-open https://wa.me/+923021431324")
-        superuser()        
-superuser()
 def rd(ids,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
@@ -519,9 +488,41 @@ def rd(ids,passlist,fbcr):
 	except Exception as e:
 		pass
 
-
 try:main()
 except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 except Exception as e:pass
 #rnd()
+pass
+def superuser():
+    UMO="HRIDOYE-"
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "5".join(uuid)
+    print(logo)
+    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
+    if id in DARK:
+        Main()
+    else:
+        os.system("clear")
+        os.system("xdg-open https://t.me/bdislamicyber")
+        time.sleep(3.0)
+        
+        os.system("clear")
+        print(logo)
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
+        print ("")
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        print ("")
+        print("                Your Key is Not Approved ")
+        print("               Copy And Send Key To Admin")
+        print ("")
+        print (" Your Key : "+UMO+id)
+        print ("\n")
+        os.system("espeak \"assalamualaikum ,I am HRIDOYE VAI er  ROBOT and my boss is hridoye.Sir this tool is paid because 100% ok id just now login\"")
+        name = input(" Your Name : ")
+        os.system(f"espeak \"{name} ,prass Enter to send your key\"")
+        print ("")
+        input(" Press Enter To Send Key")
+        os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
+        superuser()        
+superuser()
