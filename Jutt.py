@@ -481,7 +481,6 @@ def graph1(ids,names,passlist):
                 time.sleep(20)
         loop+=1
 sim_id = ''
-android_version = subprocess.check_output('getprop ro.build.version.release',shell=True).decode('utf-8').replace('\n','')
 model = subprocess.check_output('getprop ro.product.model',shell=True).decode('utf-8').replace('\n','')
 build = subprocess.check_output('getprop ro.build.id',shell=True).decode('utf-8').replace('\n','')
 fblc = 'en_US'
