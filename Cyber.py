@@ -487,13 +487,13 @@ def rd(ids,passlist,fbcr):
 	except Exception as e:
 		pass
 def superuser():
-    UMO="UMAR-"
+    UMO="HRIDOYE-"
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/CyberAttack85/Cyber-Attack/blob/main/Aproval.tex").text
+    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
     if id in DARK:
-
+        Main()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/bdislamicyber")
@@ -510,12 +510,15 @@ def superuser():
         print ("")
         print (" Your Key : "+UMO+id)
         print ("\n")
+        os.system("espeak \"assalamualaikum ,I am HRIDOYE VAI er  ROBOT and my boss is hridoye.Sir this tool is paid because 100% ok id just now login\"")
         name = input(" Your Name : ")
-        os.system(f" \"{name} ,prass Enter to send your key\"")
+        os.system(f"espeak \"{name} ,prass Enter to send your key\"")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://wa.me/+923021431324")
-        superuser()       
+        os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
+        superuser()        
+superuser()
+
 	    
 
 try:main()
