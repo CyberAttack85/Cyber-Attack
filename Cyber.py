@@ -517,7 +517,7 @@ def superuser():
         input(" Press Enter To Send Key")
         os.system("xdg-open https://wa.me/+923021431324")
         superuser()      
-
+        superuser()
 def rd(ids,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
