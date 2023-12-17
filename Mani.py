@@ -197,11 +197,11 @@ tokenku=[]
 
 def menu():
     clear();http()
-    print(' [1\033[97;1m] FILE CLONING')
-    print(' [2\033[97;1m] RANDOM CLONING ')
-    print(' [3\033[97;1m] JOIN GROUP ')
-    print(' [4\033[97;1m] CONTACT ADMIN')
-    print(' [0\033[97;1m] EXIT FROM UMAR TOOL ');line()
+    print(' [1\033[97;1m] 𝐅𝐢𝐥𝐞          𝐂𝐥𝐨𝐧𝐢𝐧𝐠')
+    print(' [2\033[97;1m] 𝐑𝐚𝐧𝐝𝐨𝐦 𝐂𝐥𝐨𝐧𝐢𝐧𝐠')
+    print(' [3\033[97;1m] 𝐉𝐨𝐢𝐧         𝐆𝐫𝐨𝐮𝐩𝐬 ')
+    print(' [4\033[97;1m] 𝐂𝐨𝐧𝐭𝐚𝐜𝐭   𝐀𝐝𝐦𝐢𝐧')
+    print(' [0\033[97;1m] 𝐄𝐗𝐈𝐓 𝐅𝐑𝐎𝐌 𝐔𝐌𝐀𝐑 𝐓𝐎𝐎𝐋 ');line()
     UMAR=input(' [•] Choose : ')
     if UMAR in ['1','01']:file()
     elif UMAR in ['2','02']:pak()
