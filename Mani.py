@@ -1,7 +1,7 @@
 from os import path
 import os,base64,zlib,pip,urllib, random ,time,json,re,string,subprocess,sys
 
-#os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
+#os.system('xdg-open https://www.facebook.com/groups/1020338239226719/')
 os.system('clear')
 print('\n [√] Wait Installing Modules...!')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
@@ -22,8 +22,8 @@ def mani():
 ###### FOLDER MAKE ###### 
 
 try:
-    os.mkdir('MANI')
-    os.system('mv MANI /sdcard')
+    os.mkdir('UMAR')
+    os.system('mv UMAR /sdcard')
 except:
     pass
 
@@ -197,11 +197,11 @@ tokenku=[]
 
 def menu():
     clear();http()
-    print(' [\033[1;32m1\033[97;1m] FILE CLONING')
-    print(' [\033[1;32m2\033[97;1m] RANDOM CLONING ')
-    print(' [\033[1;32m3\033[97;1m] JOIN GROUP ')
-    print(' [\033[1;32m4\033[97;1m] CONTACT ADMIN')
-    print(' [\033[1;32m0\033[97;1m] \033[1;31mEXIT FROM MANI TOOL ');line()
+    print(' [1;32m1\033[97;1m] FILE CLONING')
+    print(' [1;32m2\033[97;1m] RANDOM CLONING ')
+    print(' [1;32m3\033[97;1m] JOIN GROUP ')
+    print(' [1;32m4\033[97;1m] CONTACT ADMIN')
+    print(' [1;32m0\033[97;1m] \033[1;31mEXIT FROM MANI TOOL ');line()
     mani=input(' [•] Choose : ')
     if mani in ['1','01']:file()
     elif mani in ['2','02']:pak()
