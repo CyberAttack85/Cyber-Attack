@@ -220,9 +220,9 @@ def group():
     print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
     mani=input(' [•] Choose : ')
     if mani == '1':
-        os.system('xdg-open https://chat.whatsapp.com/B5IVtFJli4l79f2i9ZYDsn');menu()
+        os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb');menu()
     if mani == '2':
-        os.system('xdg-open https://facebook.com/groups/1245912839659325/');menu()
+        os.system('xdg-open https://www.facebook.com/InnocentUmarr/');menu()
     if mani == '0':
         menu()
     else:
