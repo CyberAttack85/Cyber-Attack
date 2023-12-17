@@ -78,7 +78,6 @@ id=[]
 tp=0
 lim=0
 SEX= f"{random.choice(['Liger','METERED','MOBILE.EDGE' ,'MOBILE.HSPA','MOBILE.LTE','MODERATE'])}"
-ses = requests.Session()
 def verf():
     myid = getKey()
     os.system(" clear ")
