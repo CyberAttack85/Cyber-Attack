@@ -38,7 +38,33 @@ def ua_mafia():
   ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}.0; '+model+f' Build/TP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
   return ua
 #Logo=Mafia
-logo=("""  .88b  d88.  .d8b.  d88888b d888888b  .d8b.\n  88'YbdP`88 d8' `8b 88'       `88'   d8' `8b\n  88  88  88 88ooo88 88ooo      88    88ooo88\n  88  88  88 88~~~88 88~~~      88    88~~~88\n  88  88  88 88   88 88        .88.   88   88\n  YP  YP  YP YP   YP YP      Y888888P YP   YP\n------------------------------------------------\n Author     :    Muhammad Muzammil\n Facebook   :    Muhammad Muzammil\n Status     :    Paid\n Version    :    30.6 \n------------------------------------------------""")
+logo= ("""\33[;33m   
+         
+\033[92m
+  ______             __                           
+ /      \           /  |                          
+/$$$$$$  | __    __ $$ |____    ______    ______  
+$$ |  $$/ /  |  /  |$$      \  /      \  /      \ 
+$$ |      $$ |  $$ |$$$$$$$  |/$$$$$$  |/$$$$$$  |
+$$ |   __ $$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$/ 
+$$ \__/  |$$ \__$$ |$$ |__$$ |$$$$$$$$/ $$ |      
+$$    $$/ $$    $$ |$$    $$/ $$       |$$ |      
+ $$$$$$/   $$$$$$$ |$$$$$$$/   $$$$$$$/ $$/       
+          /  \__$$ |                              
+          $$    $$/                               
+           $$$$$$/                      
+          
+[<>] The Original Codes are Written by Umar Nazeer 
+----------------------------------------------------------------------
+ ╰◈▪➣ Author    : 𝙐𝙈𝘼𝙍 𝙉𝘼𝙕𝙀𝙀𝙍
+ ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
+ ╰◈▪➣ Status    : PAID TOOL
+ ╰◈▪➣ Version   : 8.7.2 \033[1;37m
+      \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
+----------------------------------------------------------------------
+OK ids will be saved in 𝙐𝙈𝘼𝙍 folder
+----------------------------------------------------------------------
+\033[1;97m""")
 def clear():
   os.system('clear')
   print(logo)
@@ -51,9 +77,9 @@ def cek_apk(session,coki):
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	if len(game)==0:
-		print(f'\r%s [%s•%s] %sActive Apks & Web Not Found %s		'%(N,H,N,H,N))
+		print(f'\r%s [%sâ€¢%s] %sActive Apks & Web Not Found %s		'%(N,H,N,H,N))
 	else:
-		print(f'\r{A} [•]%s Active Apks & Web 👇 '%(H))
+		print(f'\r{A} [â€¢]%s Active Apks & Web ðŸ‘‡ '%(H))
 		for i in range(len(game)):
 			print(f"\r%s [%s] %s %s "%(D,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),D))
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
@@ -61,9 +87,9 @@ def cek_apk(session,coki):
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	if len(game)==0:
-		print(f'\r%s [%s•%s] %sExpired Apks & Web Not Found %s		'%(N,M,N,M,N))
+		print(f'\r%s [%sâ€¢%s] %sExpired Apks & Web Not Found %s		'%(N,M,N,M,N))
 	else:
-		print(f'\r{A} [•]%s Expired Apks & Web 👇 '%(M))
+		print(f'\r{A} [â€¢]%s Expired Apks & Web ðŸ‘‡ '%(M))
 		for i in range(len(game)):
 			print(f"\r%s [%s] %s %s "%(C,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),A))
 
