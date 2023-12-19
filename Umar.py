@@ -45,8 +45,7 @@ SEX = f"{random.choice(['Liger', 'METERED', 'MOBILE.EDGE', 'MOBILE.HSPA', 'MOBIL
 ses = requests.Session()
 def logo():
 	os.system('clear')
-	logo= ("""\33[;33m   
-         
+	logo= ("""\33[;33m            
 \033[92m
   ______             __                           
  /      \           /  |                          
