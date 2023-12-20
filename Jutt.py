@@ -126,21 +126,21 @@ def jalan(z):
 
 logo =                                          """            
 \033[1;37m                                                                                                                                                                              
- d888b8b    88bd88b  d888b8b  ?88   d8P  d888b8b      
-d8P' ?88    88P' ?8bd8P' ?88  d88   88  d8P' ?88      
-88b  ,88b  d88   88P88b  ,88b ?8(  d88  88b  ,88b     
-`?88P'`88bd88'   88b`?88P'`88b`?88P'?8b `?88P'`88b    
-                                     )88              
-    𝒜𝓃𝒶𝓎𝒶 𝒸𝒽𝒶𝓊𝒹𝒽𝓇𝓎                  ,d8P              
-                                 `?888P'              
+   d888b8b    88bd88b  d888b8b  ?88   d8P  d888b8b      
+  d8P' ?88    88P' ?8bd8P' ?88  d88   88  d8P' ?88      
+  88b  ,88b  d88   88P88b  ,88b ?8(  d88  88b  ,88b     
+  `?88P'`88bd88'   88b`?88P'`88b`?88P'?8b `?88P'`88b    
+                                       )88              
+      𝒜𝓃𝒶𝓎𝒶 𝒸𝒽𝒶𝓊𝒹𝒽𝓇𝓎                  ,d8P              
+                                   `?888P'              
 
-[<>] The Original Codes are Written by Anaya Chaudhry
-\033[1;37m------------------------------------------------------
-\033[1;37m Owner    :      Anaya Chaudhry
-\033[1;37m Facebook :      Anaya Chaudhry
-\033[1;37m Github   :      Anaya
-\033[1;37m Version  :      19.8
-\033[1;37m------------------------------------------------------ """
+  [<>] The Original Codes are Written by Anaya Chaudhry
+  \033[1;37m------------------------------------------------------
+  \033[1;37m Owner    :      Anaya Chaudhry
+  \033[1;37m Facebook :      Anaya Chaudhry
+  \033[1;37m Github   :      Anaya
+  \033[1;37m Version  :      19.8
+  \033[1;37m------------------------------------------------------ """
 
 
 def hasil(OK, cp):
@@ -161,7 +161,7 @@ def faisalmand():
     ipm = requests.get(url_ip).json()
     todz = ''
     IP = ipm['origin']
-    print(f'[01] File Crack')
+    print(f'  [01] File Crack')
     print(' \033[1;94m[02] \033[1;97mCreate File ')
     print(' \033[1;93m[03] \033[1;97mSeprate Idz ')
     print(' \033[1;95m[04] \033[1;97mDouble Idz Cut From File ')
