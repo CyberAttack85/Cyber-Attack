@@ -161,12 +161,12 @@ def faisalmand():
     ipm = requests.get(url_ip).json()
     todz = ''
     IP = ipm['origin']
-    print(f'  [01] File Crack')
-    print(' \033[1;94m[02] \033[1;97mCreate File ')
-    print(' \033[1;93m[03] \033[1;97mSeprate Idz ')
-    print(' \033[1;95m[04] \033[1;97mDouble Idz Cut From File ')
-    print(' \033[1;96m[05] \033[1;97mRemove Expire Token')
-    print('\033[1;93m [00] \033[1;97mExit ')
+    print(f'  [01]   File Crack')
+    print(f'  [02]   Create File')
+    print(f'  [03]   Separate Ids')
+    print(f'  [04]   Double Idz Cut From File ')
+    print(f'  [05]   Remove Expire Token')
+    print(f'   [00]   Exit ')
     print('\033[1;97m-----------------------------------------------')
     _ffaisal___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _ffaisal___ in ('1', '01'):
