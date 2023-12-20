@@ -324,7 +324,8 @@ class __xxx__:
                     cookies={'cookie': coki}).text
 
     def __pler__(self):
-        print(' [1] \033[1;97mCrack Auto Pass \033[1;92m{4-PASS}')
+        print(
+            ' [1] \033[1;97mCrack Auto Pass \033[1;92m{4-PASS}')
         print(
             ' [2] \033[1;97mCrack Digit Passwords   \033[1;92m{3-PASS}')
         print(
