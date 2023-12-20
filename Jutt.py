@@ -166,7 +166,7 @@ def faisalmand():
     print(f'  [03]   Separate Ids')
     print(f'  [04]   Double Idz Cut From File ')
     print(f'  [05]   Remove Expire Token')
-    print(f'   [00]   Exit ')
+    print(f'  [00]   Exit ')
     print('\033[1;97m-----------------------------------------------')
     _ffaisal___ = input('\033[1;93m[•] \033[1;97mChoose : ')
     if _ffaisal___ in ('1', '01'):
@@ -214,7 +214,7 @@ class __xxx__:
     def faissalx(self, id):
         os.system("clear")
         print(logo)
-        self.cnt = input('\033[1;93m[××] \033[1;97mFile Name :\033[1;92m ')
+        self.cnt = input('\033[1;93m[📁] \033[1;97mFile Name :\033[1;92m ')
         self.id = open(self.cnt).read().splitlines()
         os.system('clear')
         print(logo)
