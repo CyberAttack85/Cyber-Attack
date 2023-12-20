@@ -324,13 +324,13 @@ class __xxx__:
                     cookies={'cookie': coki}).text
 
     def __pler__(self):
-        print('\033[1;93m[1] \033[1;97mCrack Auto Pass \033[1;92m{4-PASS}')
+        print(' [1] \033[1;97mCrack Auto Pass \033[1;92m{4-PASS}')
         print(
-            '\033[1;93m[2] \033[1;97mCrack Digit Passwords   \033[1;92m{3-PASS}')
+            ' [2] \033[1;97mCrack Digit Passwords   \033[1;92m{3-PASS}')
         print(
-            '\033[1;93m[3] \033[1;97mCrack Name + Digit Pass \033[1;92m{2-PASS}')
+            ' [3] \033[1;97mCrack Name + Digit Pass \033[1;92m{2-PASS}')
         print(
-            '\033[1;93m[4] \033[1;97mCrack With first last and fullname Pass \033[1;92m{VIP Fast}')
+            ' [4] \033[1;97mCrack With first last and fullname Pass \033[1;92m{VIP Fast}')
         print('\033[1;97m-----------------------------------------------')
         chi = input('\033[1;93m[•] \033[1;97mChoose : \033[1;92m')
         if chi == '':
