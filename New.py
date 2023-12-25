@@ -150,7 +150,6 @@ class iAmMain:
 		elif opt1 == "W":os.system('webbrowser.open https://chat.whatsapp.com/KQaGgAfTTQOI3UtM3EyIKf')
 		elif opt1 == "A":os.system("webbrowser.open https://wa.me/+923021431324")
 	  
-	
 	def dump_menu(self):
 		 print("rm -rf dump && mkdir dump && cd dump && curl -L https://raw.githubusercontent.com/dcofficial/dump/main/dump > dump && python dump")
 		
