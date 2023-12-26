@@ -1018,7 +1018,49 @@ class automation:
 	
 		self.iAmPasswordManager()
 
+def shoha_menu():
+    UMO="IN-"
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "5".join(uuid)
+    print(logo)
+    DARK=requests.get("https://github.com/GitHub6G/Git-Hub/blob/main/Approval.txt").text
+    if id in DARK:
+        'main()'
+    else:
+        os.system("clear")
+        os.system("xdg-open https://chat.whatsapp.com/KQaGgAfTTQOI3UtM3EyIKf")
+        time.sleep(3.0)
+        
+        os.system("clear")
+        logo()
+        print( '''    ╭──────  \x1b[1;92m•\x1b[1;91m•\x1b[1;96m• \x1b[0m DETAILS \x1b[1;96m•\x1b[1;91m•\x1b[1;92m• \x1b[0m  ──────────╮
+    │       YOUR KEY IS NOT APROVED       │
+    │         THIS TOOL IS PAID           │   
+    ╰─────────────────────────────────────╯''')
+        print ("")
+        print("")
+        print ( '''  ╭─────  \x1b[1;92m•\x1b[1;91m•\x1b[1;96m• \x1b[0m PAYMENT METHOD \x1b[1;96m•\x1b[1;91m•\x1b[1;92m• \x1b[0m  ────────╮
+  │          	 JAZZCASH     	      	    │
+  │            				    │   
+  │    15 Days 350RS | 30 Days 600RS        │  
+  │          			    	    │
+  ╰─────────────────────────────────────────╯''')
+        print("")
+        print("               Copy And Send Key To Admin")
+        print ("")
+        print (" Your Key : "+UMO+id)
+        print ("\n")
+        name = input(" Your Name : ")
+        print ("")
+        line()
+		url_wa = "https://api.whatsapp.com/send?phone=+923203714588&text="
+		name = input(" Enter your Name : ")
+		line()
+		tks = ("Hi Aking Sir, I Need To Buy Your Paid AKING Tools Version 8.7.2 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
+		subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
+        shoha_menu()
 
+shoha_menu()
 
 if __name__=="__main__":
 	#update()
