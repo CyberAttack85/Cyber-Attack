@@ -72,7 +72,7 @@ def file():
 
 
 def sex():
-	ua = f"[FBAN/Orca-Android;FBAV/120.0.0.56.124;FBPN/com.facebook.orca;FBLC/en_US;FBBV/209027753;FBCR/Jio 4G;FBMF/OPPO;FBBD/OPPO;FBDV/"+str(gt)+";FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1412};]"
+	ua = f"[FBAN/katana-Android;FBAV/296.0.0.44.119;FBPN/com.facebook.katana;FBLC/es_LA;FBBV/255824636;FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/"+str(gt)+";FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.5,width=540,height=960};]"
 	return ua
 	
 def M1(ids,names,psd):
